@@ -28,6 +28,7 @@ I briefly explain each of the layers that make up clean architecture within the 
 
 ```
 └── /src
+    ├── /ioc                       # Dependency injection manual config
     ├── /domain                    # Enterprise Business Rules (entities)
     ├── /application               # Application Business Rules (use cases)
     ├── /infrastructure            # Technical details of the domain and application layers

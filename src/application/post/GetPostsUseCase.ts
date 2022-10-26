@@ -7,7 +7,8 @@ import GetPostsData from "src/domain/post/GetPostsData";
 
 export default class GetPostsUseCase {
   constructor(
-    @inject(IPostRepositoryToken) private postRepository: IPostRepository
+    @inject(IPostRepositoryToken)
+    private readonly postRepository: IPostRepository
   ) {}
 
   public execute(data: GetPostsData) {

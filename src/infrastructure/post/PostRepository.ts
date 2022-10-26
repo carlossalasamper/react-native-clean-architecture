@@ -1,19 +1,10 @@
-import { registry, singleton } from "reactject";
+import { injectable } from "reactject";
 import GetPostsData from "src/domain/post/GetPostsData";
 import Post from "src/domain/post/Post";
-import {
-  IPostRepository,
-  IPostRepositoryToken,
-} from "src/domain/post/IPostRepository";
+import { IPostRepository } from "src/domain/post/IPostRepository";
 import axios from "axios";
 
-@singleton()
-@registry([
-  {
-    token: IPostRepositoryToken,
-    useClass: PostRepository,
-  },
-])
+@injectable()
 class PostRepository implements IPostRepository {
   public async find(id: number) {
     return (

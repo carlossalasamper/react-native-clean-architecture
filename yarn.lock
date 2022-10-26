@@ -1396,7 +1396,7 @@
   resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-13.0.0.tgz#e2989b85e95a82bce216f88cf8fb583ab050ec95"
   integrity sha512-TI+l71+5aSKnShYclFa14Kum+hQMZ86b95SH6tQUG3qZEmLTarvWpKwqtTwQKqvlJSJrpFiSFu3eCuZokY6zWA==
 
-"@expo/webpack-config@^0.17.0":
+"@expo/webpack-config@^0.17.2":
   version "0.17.2"
   resolved "https://registry.yarnpkg.com/@expo/webpack-config/-/webpack-config-0.17.2.tgz#04975c0f88714df592722be1ddd616bacdff50ff"
   integrity sha512-cgcWyVXUEH5wj4InAPCIDHAGgpkQhpzWseCj4xVjdL3paBKRMWVjPUqmdHh/exap3U0kHGr/XS+e7ZWLcgHkUw==
@@ -2699,7 +2699,7 @@ babel-plugin-transform-typescript-metadata@^0.3.2:
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-babel-preset-expo@~9.2.0:
+babel-preset-expo@^9.2.0, babel-preset-expo@~9.2.0:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-9.2.0.tgz#d01793e3a556065f103b3095fbbc959d52f08e88"
   integrity sha512-aM2htiNx0H49H+MWCp9+cKVSdcdNSn0tbE5Dln/GO1xna4ZlnA30clbfClcYJFUcZtW90IsYeZwQ/hj8zyWhNA==
@@ -8634,9 +8634,9 @@ promise@^7.1.1:
     asap "~2.0.3"
 
 promise@^8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/promise/-/promise-8.2.0.tgz#a1f6280ab67457fbfc8aad2b198c9497e9e5c806"
-  integrity sha512-+CMAlLHqwRYwBMXKCP+o8ns7DN+xHDUiI+0nArsiJ9y+kJVPLFxEaSw6Ha9s9H0tftxg2Yzl25wqj9G7m5wLZg==
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/promise/-/promise-8.3.0.tgz#8cb333d1edeb61ef23869fbb8a4ea0279ab60e0a"
+  integrity sha512-rZPNPKTOYVNEEKFaq1HqTgOwZD+4/YHS5ukLzQCypkj+OkYx7iv0mA91lJlpPPZ8vMau3IIGj5Qlwrx+8iiSmg==
   dependencies:
     asap "~2.0.6"
 

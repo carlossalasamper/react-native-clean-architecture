@@ -1,5 +1,5 @@
 {
   "parser": "@typescript-eslint/parser",
   "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
-  "ignorePatterns": ["babel.config.js", "metro.config.js"]
+  "ignorePatterns": ["babel.config.js", "metro.config.js", "webpack.config.js"]
 }

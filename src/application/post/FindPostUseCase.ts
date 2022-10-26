@@ -6,7 +6,8 @@ import {
 
 export default class FindPostUseCase {
   constructor(
-    @inject(IPostRepositoryToken) private postRepository: IPostRepository
+    @inject(IPostRepositoryToken)
+    private readonly postRepository: IPostRepository
   ) {}
 
   public execute(id: number) {
