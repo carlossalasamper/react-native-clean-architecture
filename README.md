@@ -16,7 +16,7 @@
 - 🚢 Navigation: [@react-navigation/native](https://reactnavigation.org/docs/getting-started)
 - 🧰 State Manager: [Redux Toolkit](https://redux-toolkit.js.org/)
 
-</br>
+<hr>
 
 ## 📁 Project File Structure
 
@@ -57,7 +57,7 @@ As you can see, the most notable customization I have done is to separate the do
 - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 - https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/
 
-</br>
+<hr>
 
 ## Run
 
@@ -85,10 +85,29 @@ iOS
 yarn ios
 ```
 
-</br>
+<hr>
 
 ## Eject from Expo
 
 ```bash
 expo eject
 ```
+
+<hr>
+
+## Support the project
+
+<p align="center">☕️ Buy me a coffee so the open source party never ends.</p>
+
+<p align="center"><a href="https://www.buymeacoffee.com/carlossala95" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></p>
+
+<p align="center">
+  <a href="https://www.youtube.com/channel/UCC-EUKPStBfQ1nEIvSl6bAQ" target="_blank">YouTube ▶️</a>
+  <a href="https://instagram.com/carlossalasamper" target="_blank">Instagram 📸</a>
+  <a href="https://twitter.com/carlossala95" target="_blank">Twitter 🐦</a>
+  <a href="https://facebook.com/carlossala95" target="_blank">Facebook 👍</a>
+</p>
+<hr>
+<p align="center">
+  <a href="https://godofprogramming.com" target="_blank">godofprogramming.com</a>
+</p>
