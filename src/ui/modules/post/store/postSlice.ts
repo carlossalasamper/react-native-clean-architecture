@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { container } from "reactject";
-import Post from "src/domain/post/Post";
-import GetPostsUseCase from "src/application/post/GetPostsUseCase";
-import FindPostUseCase from "src/application/post/FindPostUseCase";
+import Post from "src/post/domain/Post";
+import GetPostsUseCase from "src/post/application/GetPostsUseCase";
+import FindPostUseCase from "src/post/application/FindPostUseCase";
 import { PostSliceState } from "../types";
 import { RootState } from "../../../store";
 

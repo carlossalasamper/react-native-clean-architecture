@@ -1,4 +1,4 @@
-import Post from "src/domain/post/Post";
+import Post from "src/post/domain/post/Post";
 
 export interface PostSliceState {
   isLoading: boolean;

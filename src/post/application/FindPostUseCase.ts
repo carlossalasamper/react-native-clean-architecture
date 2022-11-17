@@ -1,9 +1,10 @@
-import { inject } from "reactject";
+import { inject, injectable } from "reactject";
 import {
   IPostRepository,
   IPostRepositoryToken,
-} from "src/domain/post/IPostRepository";
+} from "src/post/domain/IPostRepository";
 
+@injectable()
 export default class FindPostUseCase {
   constructor(
     @inject(IPostRepositoryToken)

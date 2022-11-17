@@ -28,7 +28,7 @@
     "react-native-safe-area-context": "4.3.1",
     "react-native-web": "~0.18.7",
     "react-redux": "^7.2.6",
-    "reactject": "^0.1.95"
+    "reactject": "^0.2.21"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

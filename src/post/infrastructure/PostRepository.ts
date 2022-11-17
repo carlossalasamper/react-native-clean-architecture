@@ -1,7 +1,7 @@
 import { injectable } from "reactject";
-import GetPostsData from "src/domain/post/GetPostsData";
-import Post from "src/domain/post/Post";
-import { IPostRepository } from "src/domain/post/IPostRepository";
+import GetPostsData from "src/post/domain/GetPostsData";
+import Post from "src/post/domain/post/Post";
+import { IPostRepository } from "src/post/domain/post/IPostRepository";
 import axios from "axios";
 
 @injectable()
