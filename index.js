@@ -1,13 +1,18 @@
+import "reflect-metadata";
 import "expo-dev-client";
-
 import { registerRootComponent } from "expo";
 import { createElement } from "react";
 import { Provider } from "react-redux";
+import { Reactject } from "reactject";
 
-import "./src/AppContainer";
+import AppModule from "./src/AppModule";
 import App from "./src/ui/App";
 import store from "./src/ui/store";
 
-registerRootComponent(() =>
-  createElement(Provider, { store }, createElement(App))
-);
+(() => {
+  Reactject.start(AppModule);
+
+  registerRootComponent(() =>
+    createElement(Provider, { store }, createElement(App))
+  );
+})();
