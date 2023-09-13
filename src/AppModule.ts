@@ -1,7 +1,8 @@
-import { module, ReactjectModule } from "reactject";
+import { module } from "inversify-sugar";
 import { PostModule } from "./post/PostModule";
+import { CoreModule } from "./core/CoreModule";
 
 @module({
-  submodules: [PostModule],
+  imports: [CoreModule, PostModule],
 })
-export default class AppModule extends ReactjectModule {}
+export default class AppModule {}

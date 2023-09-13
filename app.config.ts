@@ -4,6 +4,7 @@ import packageJson from "./package.json";
 const appConfig: ExpoConfig = {
   name: "react-native-clean-architecture",
   slug: "react-native-clean-architecture",
+  scheme: "rnca",
   version: packageJson.version,
   entryPoint: "./index.js",
   orientation: "portrait",
@@ -22,6 +23,7 @@ const appConfig: ExpoConfig = {
     supportsTablet: true,
   },
   android: {
+    package: "com.carlossalasamper.reactnativecleanarchitecture",
     adaptiveIcon: {
       foregroundImage: "./assets/images/adaptive-icon.png",
       backgroundColor: "#FFFFFF",

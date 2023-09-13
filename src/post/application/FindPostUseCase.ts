@@ -1,4 +1,4 @@
-import { inject, injectable } from "reactject";
+import { injectable, provided } from "inversify-sugar";
 import {
   IPostRepository,
   IPostRepositoryToken,
@@ -7,7 +7,7 @@ import {
 @injectable()
 export default class FindPostUseCase {
   constructor(
-    @inject(IPostRepositoryToken)
+    @provided(IPostRepositoryToken)
     private readonly postRepository: IPostRepository
   ) {}
 

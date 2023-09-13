@@ -3,15 +3,16 @@
 <p align="center">
 <img src="./assets/images/logo.png?raw=true" style="max-width: 100%; width: 600px;" />
 </p>
-<p align="center" style="margin-top: 10px;">A clean architecture scaffold in React Native that is easy to understand.</p>
+<p align="center" style="margin-top: 10px;">A React Native scaffold with a clean architecture that is easy to understand.</p>
 
 ## Features
 
 - 📁 Clean architecture. Layered file structure
 - 🛡️ TypeScript bulletproof typing
 - 🖌️ Code format: [ESLint](https://eslint.org/)
+- 🖌️ Commit format: [CommitLint](https://commitlint.js.org)
 - 🐩 Git hooks: [Husky](https://www.npmjs.com/package/husky)
-- 💉 Dependency injection: [Reactject](https://www.npmjs.com/package/reactject)
+- 💉 Dependency injection: [InversifySugar](https://github.com/carlossalasamper/inversify-sugar)
 - 🌍 I18n: [expo-localization](https://docs.expo.dev/versions/latest/sdk/localization/) + [i18n-js](https://www.npmjs.com/package/i18n-js)
 - 🚢 Navigation: [@react-navigation/native](https://reactnavigation.org/docs/getting-started)
 - 🧰 State Manager: [Redux Toolkit](https://redux-toolkit.js.org/)
@@ -20,38 +21,39 @@
 
 ## 📁 Project File Structure
 
-What makes the implementation of the clean architecture concept more difficult in my opinion is that since it is defined theoretically, each person implements it using different terminology or omitting/adding some layers or pieces to simplify it or continue to make it more complex.
+> ⚠️ What makes the implementation of the clean architecture concept more difficult in my opinion is that since it is defined theoretically, each person implements it using different terminology or omitting/adding some layers or pieces to simplify it or continue to make it more complex.
 
 For this reason, I think it is important to emphasize the documentation that accompanies the architecture to avoid obstacles with the rest of the people who are going to work with this system.
 
-I briefly explain each of the layers that make up clean architecture within the /src folder:
+I briefly explain each of the four layers that make up clean architecture within the /src folder:
 
 ```
 └── /src
-    ├── AppModule.ts               # Dependency injection entry point
-    ├── /post                      # Post business entity folder
-    │   ├── /domain                # Enterprise Business Rules (entities)
-    │   ├── /application           # Application Business Rules (use cases)
-    │   └── /infrastructure        # Technical details of the domain and application layers
-    └── /ui                        # Contains the React Native source code
-        ├── /i18n                  # I18n setup, injectable service and translations
-        ├── /modules               # Modules/features
-        │   ├── /core              # Project core UI
-        │   │   ├── /components
-        │   │   ├── /screens
-        │   │   ├── /store
-        │   │   └── /types
-        │   └── /post              # Post related UI
-        │       ├── /components
-        │       ├── /screens
-        │       ├── /store
-        │       └── /types
-        ├── /navigation            # Navigation setup
-        ├── /store                 # Redux setup
-        └── App.tsx
+    ├── AppModule.ts               # Dependency injection root module
+    ├── /core                      # Core bounded context
+    │   └── /presentation
+    └── /post                      # Post bounded context
+        ├── /domain
+        ├── /application
+        ├── /infrastructure
+        └── /presentation
 ```
 
-As you can see, the most notable customization I have done is to separate the domain and application infrastructure into different folders on the one hand, and the UI details on the other.
+### Domain
+
+This layer contains all the enterprise business rules: entities, specifications...
+
+### Application
+
+This layer contains the use cases of the bounded context.
+
+### Infrastructure
+
+This layer contains the technical details (implementation) of the domain layer and third parties integrations.
+
+### Presentation
+
+This layer contains the React Native source code: views and controllers (Redux Thunks).
 
 ### References
 
@@ -103,12 +105,11 @@ expo eject
 <p align="center"><a href="https://www.buymeacoffee.com/carlossala95" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></p>
 
 <p align="center">
-  <a href="https://www.youtube.com/channel/UCC-EUKPStBfQ1nEIvSl6bAQ" target="_blank">YouTube ▶️</a>
-  <a href="https://instagram.com/carlossalasamper" target="_blank">Instagram 📸</a>
-  <a href="https://twitter.com/carlossala95" target="_blank">Twitter 🐦</a>
-  <a href="https://facebook.com/carlossala95" target="_blank">Facebook 👍</a>
+  <a href="https://www.youtube.com/channel/UCC-EUKPStBfQ1nEIvSl6bAQ" target="_blank">YouTube</a> |
+  <a href="https://instagram.com/carlossalasamper" target="_blank">Instagram</a> |
+  <a href="https://twitter.com/carlossala95" target="_blank">Twitter</a> |
+  <a href="https://facebook.com/carlossala95" target="_blank">Facebook</a>
 </p>
-<hr>
 <p align="center">
   <a href="https://godofprogramming.com" target="_blank">godofprogramming.com</a>
 </p>

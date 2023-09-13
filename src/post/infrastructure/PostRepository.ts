@@ -1,8 +1,8 @@
-import { injectable } from "reactject";
 import GetPostsData from "src/post/domain/GetPostsData";
-import Post from "src/post/domain/post/Post";
-import { IPostRepository } from "src/post/domain/post/IPostRepository";
 import axios from "axios";
+import { injectable } from "inversify-sugar";
+import { IPostRepository } from "../domain/IPostRepository";
+import Post from "../domain/Post";
 
 @injectable()
 class PostRepository implements IPostRepository {
