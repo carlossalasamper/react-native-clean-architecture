@@ -32,6 +32,9 @@ const appConfig: ExpoConfig = {
   web: {
     favicon: "./assets/images/favicon.png",
   },
+  extra: {
+    EXPO_BASE_API_URL: "https://jsonplaceholder.typicode.com",
+  },
 };
 
 export default appConfig;

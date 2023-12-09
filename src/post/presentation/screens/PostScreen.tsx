@@ -1,34 +1,34 @@
 import { useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import {
-  useAppDispatch,
-  useAppSelector,
-} from "src/core/presentation/store/hooks";
-import { postThunks } from "../store/postSlice";
+
 import { RootStackScreenProps } from "src/core/presentation/navigation/types";
 import { useI18n } from "src/core/presentation/hooks/useI18n";
+import { withProviders } from "src/core/presentation/utils/withProviders";
+import { FindPostStoreProvider } from "../stores/FindPostStore/FindPostStoreProvider";
+import { useFindPostStore } from "../stores/FindPostStore/useFindPostStore";
+import { observer } from "mobx-react";
 
-const PostScreen = ({ route }: RootStackScreenProps<"Post">) => {
+const PostScreen = observer(({ route }: RootStackScreenProps<"Post">) => {
   const { id } = route.params;
   const i18n = useI18n();
-  const dispatch = useAppDispatch();
-  const { currentPost, isLoading } = useAppSelector((state) => state.post);
+  const findPostStore = useFindPostStore();
+  const { post, isLoading } = findPostStore;
 
   useEffect(() => {
-    dispatch(postThunks.findPostThunk(id));
-  }, [dispatch, id]);
+    findPostStore.findPost(id);
+  }, [findPostStore, id]);
 
   return isLoading ? (
     <Text>{i18n.t("post.screens.Post.loading")}</Text>
   ) : (
     <View style={styles.container}>
-      <Text style={styles.title}>{currentPost?.title}</Text>
-      <Text style={styles.body}>{currentPost?.body}</Text>
+      <Text style={styles.title}>{post?.title}</Text>
+      <Text style={styles.body}>{post?.body}</Text>
     </View>
   );
-};
+});
 
-export default PostScreen;
+export default withProviders(FindPostStoreProvider)(PostScreen);
 
 const styles = StyleSheet.create({
   container: {

@@ -1,9 +1,9 @@
 import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import Post from "src/post/domain/Post";
+import PostEntity from "src/post/domain/entities/PostEntity";
 
 interface PostItemProps {
-  post: Post;
+  post: PostEntity;
 }
 
 const PostItem = ({ post }: PostItemProps) => {

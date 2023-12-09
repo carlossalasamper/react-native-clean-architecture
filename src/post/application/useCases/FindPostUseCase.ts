@@ -2,7 +2,7 @@ import { injectable, provided } from "inversify-sugar";
 import {
   IPostRepository,
   IPostRepositoryToken,
-} from "src/post/domain/IPostRepository";
+} from "src/post/domain/specifications/IPostRepository";
 
 @injectable()
 export default class FindPostUseCase {

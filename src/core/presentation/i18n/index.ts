@@ -11,7 +11,7 @@ class I18n {
     this.i18nJs = new I18nJs(locales);
 
     this.i18nJs.enableFallback = true;
-    this.i18nJs.locale = Localization.locale;
+    this.i18nJs.locale = Localization.locale.substring(0, 2);
   }
 
   public t(scope: Scope, options?: TranslateOptions) {

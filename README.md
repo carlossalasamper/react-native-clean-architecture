@@ -1,9 +1,9 @@
-# React Native: Clean Architecture
+# React Native Clean Architecture
 
 <p align="center">
-<img src="./assets/images/logo.png?raw=true" style="max-width: 100%; width: 600px;" />
+<img src="./assets/images/react-native-clean-architecture.png?raw=true" style="max-width: 100%; width: 600px;" />
 </p>
-<p align="center" style="margin-top: 10px;">A React Native scaffold with a clean architecture that is easy to understand.</p>
+<p align="center" style="margin-top: 10px;">A <b>React Native scaffold</b> with a clean architecture that is easy to understand.</p>
 
 ## Features
 
@@ -15,7 +15,7 @@
 - 💉 Dependency injection: [InversifySugar](https://github.com/carlossalasamper/inversify-sugar)
 - 🌍 I18n: [expo-localization](https://docs.expo.dev/versions/latest/sdk/localization/) + [i18n-js](https://www.npmjs.com/package/i18n-js)
 - 🚢 Navigation: [@react-navigation/native](https://reactnavigation.org/docs/getting-started)
-- 🧰 State Manager: [Redux Toolkit](https://redux-toolkit.js.org/)
+- 🧰 State Manager: [Mobx](https://mobx.js.org/)
 
 <hr>
 

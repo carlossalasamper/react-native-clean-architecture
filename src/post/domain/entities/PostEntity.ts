@@ -1,4 +1,4 @@
-export default interface Post {
+export default interface PostEntity {
   id: number;
   userId: number;
   title: string;
