@@ -1,7 +1,7 @@
-import axios, { AxiosRequestConfig } from "axios";
-import { provided, injectable } from "inversify-sugar";
-import IHttpClient from "../../domain/specifications/IHttpClient";
-import Env, { EnvToken } from "src/core/domain/entities/Env";
+import axios, {AxiosRequestConfig} from 'axios';
+import {provided, injectable} from 'inversify-sugar';
+import IHttpClient from '../../domain/specifications/IHttpClient';
+import Env, {EnvToken} from 'src/core/domain/entities/Env';
 
 @injectable()
 class HttpClient implements IHttpClient {
@@ -10,7 +10,7 @@ class HttpClient implements IHttpClient {
   constructor(@provided(EnvToken) private readonly env: Env) {
     this.axios = axios;
 
-    axios.interceptors.request.use((requestConfig) => {
+    axios.interceptors.request.use(requestConfig => {
       requestConfig.baseURL = this.env.EXPO_BASE_API_URL;
 
       // TODO: add authentication
@@ -18,7 +18,7 @@ class HttpClient implements IHttpClient {
       return requestConfig;
     });
 
-    this.axios.interceptors.response.use(undefined, (err) => {
+    this.axios.interceptors.response.use(undefined, err => {
       if (err.response) {
         if (err.response.status === 401 || err.response.status === 403) {
           // TODO: logout
@@ -32,33 +32,33 @@ class HttpClient implements IHttpClient {
   public get<ResponseType>(url: string, config?: AxiosRequestConfig) {
     return this.axios
       .get<ResponseType>(url, config)
-      .then((response) => response.data);
+      .then(response => response.data);
   }
 
   public post<DataType, ResponseType>(
     url: string,
     data?: DataType,
-    config?: AxiosRequestConfig
+    config?: AxiosRequestConfig,
   ) {
     return this.axios
       .post<ResponseType>(url, data, config)
-      .then((response) => response.data);
+      .then(response => response.data);
   }
 
   public patch<DataType, ResponseType>(
     url: string,
     data?: DataType,
-    config?: AxiosRequestConfig
+    config?: AxiosRequestConfig,
   ) {
     return this.axios
       .patch<ResponseType>(url, data, config)
-      .then((response) => response.data);
+      .then(response => response.data);
   }
 
   public delete<ResponseType>(url: string, config?: AxiosRequestConfig) {
     return this.axios
       .delete<ResponseType>(url, config)
-      .then((response) => response.data);
+      .then(response => response.data);
   }
 }
 

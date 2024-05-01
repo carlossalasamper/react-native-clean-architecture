@@ -1,13 +1,13 @@
-import { injectable, provided } from "inversify-sugar";
-import { makeAutoObservable } from "mobx";
-import GetPostsStoreState from "../../types/GetPostsStoreState";
-import GetPostsPayload from "src/post/application/types/GetPostsPayload";
-import GetPostsUseCase from "src/post/application/useCases/GetPostsUseCase";
+import {injectable, provided} from 'inversify-sugar';
+import {makeAutoObservable} from 'mobx';
+import GetPostsStoreState from '../../types/GetPostsStoreState';
+import GetPostsPayload from 'src/post/application/types/GetPostsPayload';
+import GetPostsUseCase from 'src/post/application/useCases/GetPostsUseCase';
 
 @injectable()
 export class GetPostsStore implements GetPostsStoreState {
   isLoading = false;
-  results = [] as GetPostsStoreState["results"];
+  results = [] as GetPostsStoreState['results'];
   count = 0;
   filters = {};
   pagination = {
@@ -17,7 +17,7 @@ export class GetPostsStore implements GetPostsStoreState {
 
   constructor(
     @provided(GetPostsUseCase)
-    private readonly getPostsUseCase: GetPostsUseCase
+    private readonly getPostsUseCase: GetPostsUseCase,
   ) {
     makeAutoObservable(this);
   }
@@ -34,20 +34,20 @@ export class GetPostsStore implements GetPostsStoreState {
     this.isLoading = isLoading;
   };
 
-  setResults = (results: GetPostsStoreState["results"]) => {
+  setResults = (results: GetPostsStoreState['results']) => {
     this.results = results;
   };
 
-  setCount = (count: GetPostsStoreState["count"]) => {
+  setCount = (count: GetPostsStoreState['count']) => {
     this.count = count;
   };
 
-  mergeFilters = (payload: Partial<GetPostsStoreState["filters"]>) => {
+  mergeFilters = (payload: Partial<GetPostsStoreState['filters']>) => {
     Object.assign(this.filters, payload);
   };
 
   mergePagination = (
-    payload: Partial<GetPostsStoreState["pagination"]>
+    payload: Partial<GetPostsStoreState['pagination']>,
   ): void => {
     Object.assign(this.pagination, payload);
   };
@@ -62,7 +62,7 @@ export class GetPostsStore implements GetPostsStoreState {
 
     return this.getPostsUseCase
       .execute(payload)
-      .then((response) => {
+      .then(response => {
         this.setResults(response.results);
         this.setCount(response.count);
       })

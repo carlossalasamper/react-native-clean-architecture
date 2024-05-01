@@ -1,20 +1,20 @@
-import GetPostsPayload from "src/post/application/types/GetPostsPayload";
-import axios from "axios";
-import { injectable, provided } from "inversify-sugar";
-import { IPostRepository } from "../../domain/specifications/IPostRepository";
-import GetPostsResponse from "src/post/application/types/GetPostsResponse";
-import PostDto from "../models/PostDto";
-import { plainToInstance } from "class-transformer";
+import GetPostsPayload from 'src/post/application/types/GetPostsPayload';
+import axios from 'axios';
+import {injectable, provided} from 'inversify-sugar';
+import {IPostRepository} from '../../domain/specifications/IPostRepository';
+import GetPostsResponse from 'src/post/application/types/GetPostsResponse';
+import PostDto from '../models/PostDto';
+import {plainToInstance} from 'class-transformer';
 import IHttpClient, {
   IHttpClientToken,
-} from "src/core/domain/specifications/IHttpClient";
+} from 'src/core/domain/specifications/IHttpClient';
 
 @injectable()
 class PostRepository implements IPostRepository {
-  private readonly baseUrl = "/posts";
+  private readonly baseUrl = '/posts';
 
   constructor(
-    @provided(IHttpClientToken) private readonly httpClient: IHttpClient
+    @provided(IHttpClientToken) private readonly httpClient: IHttpClient,
   ) {}
 
   public async find(id: number) {
@@ -27,7 +27,7 @@ class PostRepository implements IPostRepository {
   public async get({}: GetPostsPayload): Promise<GetPostsResponse> {
     const posts = (await axios.get<unknown[]>(this.baseUrl)).data;
     const response: GetPostsResponse = {
-      results: posts.map((post) => plainToInstance(PostDto, post).toDomain()),
+      results: posts.map(post => plainToInstance(PostDto, post).toDomain()),
       count: posts.length,
     };
 

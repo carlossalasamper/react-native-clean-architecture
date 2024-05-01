@@ -1,4 +1,5 @@
 {
-  "extends": ["@carlossalasamper/eslint-config"],
-  "ignorePatterns": ["babel.config.js", "metro.config.js", "webpack.config.js"]
+  "extends": ["@carlossalasamper/eslint-config", "plugin:jest/recommended"],
+  "ignorePatterns": ["babel.config.js", "metro.config.js", "webpack.config.js"],
+  "plugins": ["jest"]
 }

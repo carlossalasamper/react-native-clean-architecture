@@ -1,4 +1,4 @@
-import Constants from "expo-constants";
+import Constants from 'expo-constants';
 
 const env = Constants.expoConfig?.extra;
 

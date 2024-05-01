@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { ComponentType, PropsWithChildren } from "react";
+import React, {ComponentType, PropsWithChildren} from 'react';
 
 export const withProviders =
   (

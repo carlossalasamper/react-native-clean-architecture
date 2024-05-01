@@ -1,8 +1,8 @@
-import { injectable, provided } from "inversify-sugar";
-import { makeAutoObservable } from "mobx";
-import FindPostStoreState from "../../types/FindPostStoreState";
-import PostEntity from "src/post/domain/entities/PostEntity";
-import FindPostUseCase from "src/post/application/useCases/FindPostUseCase";
+import {injectable, provided} from 'inversify-sugar';
+import {makeAutoObservable} from 'mobx';
+import FindPostStoreState from '../../types/FindPostStoreState';
+import PostEntity from 'src/post/domain/entities/PostEntity';
+import FindPostUseCase from 'src/post/application/useCases/FindPostUseCase';
 
 @injectable()
 export class FindPostStore implements FindPostStoreState {
@@ -11,7 +11,7 @@ export class FindPostStore implements FindPostStoreState {
 
   constructor(
     @provided(FindPostUseCase)
-    private findPostUseCase: FindPostUseCase
+    private findPostUseCase: FindPostUseCase,
   ) {
     makeAutoObservable(this);
   }

@@ -1,4 +1,4 @@
-import { instanceToPlain } from "class-transformer";
+import {instanceToPlain} from 'class-transformer';
 
 export default abstract class PayloadDto<ApplicationType> {
   /**
@@ -14,6 +14,6 @@ export default abstract class PayloadDto<ApplicationType> {
   }
 
   toPlain() {
-    return instanceToPlain(this, { excludeExtraneousValues: true });
+    return instanceToPlain(this, {excludeExtraneousValues: true});
   }
 }

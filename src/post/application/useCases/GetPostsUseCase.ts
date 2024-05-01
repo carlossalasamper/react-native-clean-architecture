@@ -1,11 +1,11 @@
 import {
   IPostRepository,
   IPostRepositoryToken,
-} from "src/post/domain/specifications/IPostRepository";
-import GetPostsPayload from "src/post/application/types/GetPostsPayload";
-import { injectable, provided } from "inversify-sugar";
-import { UseCase } from "src/core/application/UseCase";
-import GetPostsResponse from "../types/GetPostsResponse";
+} from 'src/post/domain/specifications/IPostRepository';
+import GetPostsPayload from 'src/post/application/types/GetPostsPayload';
+import {injectable, provided} from 'inversify-sugar';
+import {UseCase} from 'src/core/application/UseCase';
+import GetPostsResponse from '../types/GetPostsResponse';
 
 @injectable()
 export default class GetPostsUseCase
@@ -13,7 +13,7 @@ export default class GetPostsUseCase
 {
   constructor(
     @provided(IPostRepositoryToken)
-    private readonly postRepository: IPostRepository
+    private readonly postRepository: IPostRepository,
   ) {}
 
   public execute(data: GetPostsPayload) {
