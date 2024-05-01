@@ -1,8 +1,10 @@
 import {getModuleContainer, module} from 'inversify-sugar';
-import FindPostUseCase from './application/FindPostUseCase';
-import GetPostsUseCase from './application/GetPostsUseCase';
-import {IPostRepositoryToken} from './domain/IPostRepository';
-import PostRepository from './infrastructure/PostRepository';
+import {GetPostsStore} from './presentation/stores/GetPostsStore/GetPostsStore';
+import {FindPostStore} from './presentation/stores/FindPostStore/FindPostStore';
+import {IPostRepositoryToken} from './domain/specifications/IPostRepository';
+import PostRepository from './infrastructure/implementations/PostRepository';
+import FindPostUseCase from './application/useCases/FindPostUseCase';
+import GetPostsUseCase from './application/useCases/GetPostsUseCase';
 
 @module({
   providers: [
@@ -12,6 +14,14 @@ import PostRepository from './infrastructure/PostRepository';
     },
     FindPostUseCase,
     GetPostsUseCase,
+    {
+      useClass: GetPostsStore,
+      scope: 'Transient',
+    },
+    {
+      useClass: FindPostStore,
+      scope: 'Transient',
+    },
   ],
 })
 export class PostModule {}

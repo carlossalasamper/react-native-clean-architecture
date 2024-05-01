@@ -1,32 +1,34 @@
-import {useEffect} from 'react';
-import {FlatList, Text, View} from 'react-native';
-import {
-  useAppDispatch,
-  useAppSelector,
-} from 'src/core/presentation/store/hooks';
-import {postThunks} from '../store/postSlice';
-import {useI18n} from 'src/core/presentation/hooks/useI18n';
-import PostItem from '../components/PostItem';
+import { useEffect } from "react";
+import { FlatList, Text, View } from "react-native";
 
-export default function PostsScreen() {
+import { useI18n } from "src/core/presentation/hooks/useI18n";
+import PostItem from "../components/PostItem";
+import { observer } from "mobx-react";
+import { useGetPostsStore } from "../stores/GetPostsStore/useGetPostsStore";
+import { withProviders } from "src/core/presentation/utils/withProviders";
+import { GetPostsStoreProvider } from "../stores/GetPostsStore/GetPostsStoreProvider";
+
+const PostsScreen = observer(() => {
   const i18n = useI18n();
-  const dispatch = useAppDispatch();
-  const {items, isLoading} = useAppSelector(state => state.post);
+  const getPostsStore = useGetPostsStore();
+  const { isLoading, results } = getPostsStore;
 
   useEffect(() => {
-    dispatch(postThunks.getPostsThunk());
-  }, [dispatch]);
+    getPostsStore.getPosts();
+  }, [getPostsStore]);
 
   return (
     <View>
       {isLoading ? (
-        <Text>{i18n.t('post.screens.Posts.loading')}</Text>
+        <Text>{i18n.t("post.screens.Posts.loading")}</Text>
       ) : (
         <FlatList
-          data={items}
-          renderItem={({item}) => <PostItem post={item} />}
+          data={results}
+          renderItem={({ item }) => <PostItem post={item} />}
         />
       )}
     </View>
   );
-}
+});
+
+export default withProviders(GetPostsStoreProvider)(PostsScreen);

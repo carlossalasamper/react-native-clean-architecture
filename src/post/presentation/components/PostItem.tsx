@@ -1,16 +1,16 @@
-import {useNavigation} from '@react-navigation/native';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import Post from 'src/post/domain/Post';
+import { useNavigation } from "@react-navigation/native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import PostEntity from "src/post/domain/entities/PostEntity";
 
 interface PostItemProps {
-  post: Post;
+  post: PostEntity;
 }
 
-const PostItem = ({post}: PostItemProps) => {
-  const {title, body} = post;
+const PostItem = ({ post }: PostItemProps) => {
+  const { title, body } = post;
   const navigation = useNavigation();
   const onPress = () => {
-    navigation.navigate('Post', {id: post.id});
+    navigation.navigate("Post", { id: post.id });
   };
 
   return (
@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
   container: {
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
+    borderBottomColor: "#ccc",
   },
   title: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 8,
   },
   body: {

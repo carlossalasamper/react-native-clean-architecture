@@ -1,4 +1,4 @@
-// import * as Localization from "expo-localization";
+import * as Localization from 'expo-localization';
 import {I18n as I18nJs, Scope, TranslateOptions} from 'i18n-js';
 import locales from './locales';
 import {injectable} from 'inversify-sugar';
@@ -11,7 +11,7 @@ class I18n {
     this.i18nJs = new I18nJs(locales);
 
     this.i18nJs.enableFallback = true;
-    this.i18nJs.locale = 'en';
+    this.i18nJs.locale = Localization.locale.substring(0, 2);
   }
 
   public t(scope: Scope, options?: TranslateOptions) {

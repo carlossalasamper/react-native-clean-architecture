@@ -6,7 +6,7 @@ import RootNavigator from './RootNavigator';
 
 export default function Navigation() {
   return (
-    <NavigationContainer>
+    <NavigationContainer linking={LinkingConfiguration}>
       <RootNavigator />
     </NavigationContainer>
   );

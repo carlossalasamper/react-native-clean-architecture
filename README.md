@@ -1,79 +1,115 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Clean Architecture
 
-# Getting Started
+<p align="center">
+<img src="./assets/images/react-native-clean-architecture.png?raw=true" style="max-width: 100%; width: 600px;" />
+</p>
+<p align="center" style="margin-top: 10px;">A <b>React Native scaffold</b> with a clean architecture that is easy to understand.</p>
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- 📁 Clean architecture. Layered file structure
+- 🛡️ TypeScript bulletproof typing
+- 🖌️ Code format: [ESLint](https://eslint.org/)
+- 🖌️ Commit format: [CommitLint](https://commitlint.js.org)
+- 🐩 Git hooks: [Husky](https://www.npmjs.com/package/husky)
+- 💉 Dependency injection: [InversifySugar](https://github.com/carlossalasamper/inversify-sugar)
+- 🌍 I18n: [expo-localization](https://docs.expo.dev/versions/latest/sdk/localization/) + [i18n-js](https://www.npmjs.com/package/i18n-js)
+- 🚢 Navigation: [@react-navigation/native](https://reactnavigation.org/docs/getting-started)
+- 🧰 State Manager: [Mobx](https://mobx.js.org/)
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+<hr>
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 📁 Project File Structure
 
-```bash
-# using npm
-npm start
+> ⚠️ What makes the implementation of the clean architecture concept more difficult in my opinion is that since it is defined theoretically, each person implements it using different terminology or omitting/adding some layers or pieces to simplify it or continue to make it more complex.
 
-# OR using Yarn
-yarn start
+For this reason, I think it is important to emphasize the documentation that accompanies the architecture to avoid obstacles with the rest of the people who are going to work with this system.
+
+I briefly explain each of the four layers that make up clean architecture within the /src folder:
+
+```
+└── /src
+    ├── AppModule.ts               # Dependency injection root module
+    ├── /core                      # Core bounded context
+    │   └── /presentation
+    └── /post                      # Post bounded context
+        ├── /domain
+        ├── /application
+        ├── /infrastructure
+        └── /presentation
 ```
 
-## Step 2: Start your Application
+### Domain
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+This layer contains all the enterprise business rules: entities, specifications...
 
-### For Android
+### Application
+
+This layer contains the use cases of the bounded context.
+
+### Infrastructure
+
+This layer contains the technical details (implementation) of the domain layer and third parties integrations.
+
+### Presentation
+
+This layer contains the React Native source code: views and controllers (Redux Thunks).
+
+### References
+
+- https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+- https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/
+
+<hr>
+
+## Run
+
+Dev
 
 ```bash
-# using npm
-npm run android
+yarn dev
+```
 
-# OR using Yarn
+Web
+
+```bash
+yarn web
+```
+
+Android
+
+```bash
 yarn android
 ```
 
-### For iOS
+iOS
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
 yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+<hr>
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Eject from Expo
 
-## Step 3: Modifying your App
+```bash
+expo eject
+```
 
-Now that you have successfully run the app, let's modify it.
+<hr>
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Support the project
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+<p align="center">☕️ Buy me a coffee so the open source party never ends.</p>
 
-## Congratulations! :tada:
+<p align="center"><a href="https://www.buymeacoffee.com/carlossala95" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></p>
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+<p align="center">
+  <a href="https://www.youtube.com/channel/UCC-EUKPStBfQ1nEIvSl6bAQ" target="_blank">YouTube</a> |
+  <a href="https://instagram.com/carlossalasamper" target="_blank">Instagram</a> |
+  <a href="https://twitter.com/carlossala95" target="_blank">Twitter</a> |
+  <a href="https://facebook.com/carlossala95" target="_blank">Facebook</a>
+</p>
+<p align="center">
+  <a href="https://godofprogramming.com" target="_blank">godofprogramming.com</a>
+</p>
