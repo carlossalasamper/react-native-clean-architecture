@@ -76,3 +76,4 @@ dist/
 # @end expo-cli
 
 .npmrc
+vendor/bundle/ruby
