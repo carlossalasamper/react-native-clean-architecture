@@ -64,6 +64,18 @@ This layer contains the React Native source code: views and controllers (Redux T
 
 ## Run
 
+### Configuration
+
+Rename
+```bash
+npx react-native-rename@latest "Mydio" -b "com.vas.vietteltelecom.mydio"
+```
+
+Change Icon App & Splash screen
+```bash
+npx react-native-rename@latest "Mydio" -b "com.vas.vietteltelecom.mydio"
+```
+
 Dev
 
 ```bash
@@ -97,19 +109,4 @@ expo eject
 ```
 
 <hr>
-
-## Support the project
-
-<p align="center">☕️ Buy me a coffee so the open source party never ends.</p>
-
-<p align="center"><a href="https://www.buymeacoffee.com/carlossala95" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></p>
-
-<p align="center">
-  <a href="https://www.youtube.com/channel/UCC-EUKPStBfQ1nEIvSl6bAQ" target="_blank">YouTube</a> |
-  <a href="https://instagram.com/carlossalasamper" target="_blank">Instagram</a> |
-  <a href="https://twitter.com/carlossala95" target="_blank">Twitter</a> |
-  <a href="https://facebook.com/carlossala95" target="_blank">Facebook</a>
-</p>
-<p align="center">
-  <a href="https://godofprogramming.com" target="_blank">godofprogramming.com</a>
-</p>
+ 

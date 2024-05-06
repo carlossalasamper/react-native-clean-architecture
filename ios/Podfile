@@ -31,7 +31,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'CleanArchitecture' do
+target 'Mydio' do
   use_expo_modules!
   post_integrate do |installer|
     begin
@@ -62,7 +62,7 @@ target 'CleanArchitecture' do
   # you should disable these next few lines.
   
 
-  target 'CleanArchitectureTests' do
+  target 'MydioTests' do
     inherit! :complete
     # Pods for testing
   end

@@ -26,7 +26,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="com.carlossalasamper.reactnativecleanarchitecture"/>
+        <data android:scheme="com.vas.vietteltelecom.mydio"/>
         <data android:scheme="exp+react-native-clean-architecture"/>
       </intent-filter>
     </activity>

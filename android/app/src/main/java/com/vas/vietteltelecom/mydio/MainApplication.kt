@@ -1,4 +1,4 @@
-package com.carlossalasamper.reactnativecleanarchitecture
+package com.vas.vietteltelecom.mydio
 
 import android.app.Application
 import com.facebook.react.PackageList

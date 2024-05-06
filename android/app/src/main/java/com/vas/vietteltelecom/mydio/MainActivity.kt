@@ -1,4 +1,4 @@
-package com.carlossalasamper.reactnativecleanarchitecture
+package com.vas.vietteltelecom.mydio
 import expo.modules.ReactActivityDelegateWrapper
 
 import com.facebook.react.ReactActivity
