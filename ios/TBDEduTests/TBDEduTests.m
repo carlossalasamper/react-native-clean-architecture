@@ -7,11 +7,19 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
+<<<<<<<< HEAD:ios/TBDEduTests/TBDEduTests.m
 @interface TBDEduTests : XCTestCase
 
 @end
 
 @implementation TBDEduTests
+========
+@interface MydioTests : XCTestCase
+
+@end
+
+@implementation MydioTests
+>>>>>>>> b42aa6e (rename, change bundle id project):ios/MydioTests/MydioTests.m
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {
