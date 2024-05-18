@@ -1,4 +1,14 @@
 {
   "name": "Mydio",
-  "displayName": "Mydio"
+  "displayName": "Mydio",
+  "expo": {
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/SVN_Cherish.otf"]
+        }
+      ]
+    ]
+  }
 }
