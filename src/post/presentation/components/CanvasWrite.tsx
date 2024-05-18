@@ -1,6 +1,7 @@
 import React, {
   forwardRef,
   useCallback,
+  useEffect,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -12,6 +13,7 @@ import {
   Path,
   SkPath,
   Skia,
+  Circle,
   TouchInfo,
   useTouchHandler,
   Text as TextSkia,
@@ -30,6 +32,7 @@ type Props = {
     };
   };
   matchDistance?: number;
+  matchPoints?: {x: number; y: number; passed?: boolean}[];
 };
 
 export type CanvasWriteRef = {
@@ -72,7 +75,8 @@ const CanvasWrite = forwardRef<CanvasWriteRef, Props>((props: Props, ref) => {
         y: size.height / 2 - sizeText?.height / 2 - sizeText?.y,
       }
     );
-  }, [font, size, props.text?.content]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fontMgr, size, props.text?.content]);
   const [paths, setPaths] = useState<SkPath[]>([]);
 
   const points = useRef<{x: number; y: number; passed?: boolean}[]>([]);
@@ -128,6 +132,7 @@ const CanvasWrite = forwardRef<CanvasWriteRef, Props>((props: Props, ref) => {
   );
 
   const onDrawingStart = useCallback((touchInfo: TouchInfo) => {
+    // points.current = [...points.current, {x: touchInfo.x, y: touchInfo.y}];
     setPaths(old => {
       const {x, y} = touchInfo;
       const newPath = Skia.Path.Make();
@@ -165,10 +170,17 @@ const CanvasWrite = forwardRef<CanvasWriteRef, Props>((props: Props, ref) => {
   );
 
   const reset = () => {
+    // console.log(
+    //   points.current.map(pre => [
+    //     pre.x - (positionText?.originX ?? 0),
+    //     pre.y - (positionText?.originY ?? 0),
+    //   ]),
+    //   'points',
+    // );
     setPaths([]);
     setStrokesNumber(0);
     matchPointNumber.current = 0;
-    points.current = [];
+    points.current = points.current.map(e => ({...e, passed: false}));
     maxDistance.current = 0;
   };
 
@@ -181,6 +193,16 @@ const CanvasWrite = forwardRef<CanvasWriteRef, Props>((props: Props, ref) => {
       strokesNumber: strokesNumber,
     }),
   }));
+
+  useEffect(() => {
+    if (props.matchPoints) {
+      points.current = props.matchPoints.map(e => ({
+        ...e,
+        x: e.x + (positionText?.originX ?? 0),
+        y: e.y + (positionText?.originY ?? 0),
+      }));
+    }
+  }, [positionText?.originX, positionText?.originY, props.matchPoints]);
 
   return (
     <View
@@ -202,15 +224,16 @@ const CanvasWrite = forwardRef<CanvasWriteRef, Props>((props: Props, ref) => {
             opacity={props?.text?.opacity ?? 1}
           />
         )}
-        {/* {points.current.map((point, index) => (
-          <Circle
-            cx={point.x}
-            cy={point.y}
-            r={3}
-            key={index}
-            color={point.passed ? '#FF00FF' : 'black'}
-          />
-        ))} */}
+        {false && //test
+          points.current.map((point, index) => (
+            <Circle
+              cx={point.x}
+              cy={point.y}
+              r={3}
+              key={index}
+              color={point.passed ? '#FF00FF' : 'black'}
+            />
+          ))}
         {paths.map((path, index) => (
           <Path
             key={'path' + index}

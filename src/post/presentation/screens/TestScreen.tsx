@@ -12,7 +12,6 @@ import {
   matchFont,
   useFonts,
 } from '@shopify/react-native-skia';
-import pointInPolygon from 'point-in-polygon';
 // import {useThottle} from 'src/core/presentation/hooks/useThrottle';
 
 const initPoinsA = [
@@ -220,10 +219,6 @@ export default function TestScreen() {
       return [...old, newPath];
     });
     setSoNetVe(pre => pre + 1);
-  }, []);
-
-  const pointIn = useCallback((touchInfo: TouchInfo) => {
-    return pointInPolygon([touchInfo.x, touchInfo.y], pointTest);
   }, []);
 
   // const tFindPointNear = useThottle(findPointNear, 40);
