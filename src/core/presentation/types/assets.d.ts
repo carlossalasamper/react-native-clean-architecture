@@ -1,9 +1,9 @@
-declare module "*.png" {
+declare module '*.png' {
   const value: ImageRequireSource;
   export = value;
 }
 
-declare module "*.gif" {
+declare module '*.gif' {
   const value: ImageRequireSource;
   export = value;
 }
