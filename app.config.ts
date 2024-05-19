@@ -1,39 +1,39 @@
-import { ExpoConfig } from "@expo/config-types";
-import packageJson from "./package.json";
+import {ExpoConfig} from '@expo/config-types';
+import packageJson from './package.json';
 
 const appConfig: ExpoConfig = {
-  name: "react-native-clean-architecture",
-  slug: "react-native-clean-architecture",
-  scheme: "rnca",
+  name: 'BTD-Edu',
+  slug: 'BTD-Edu',
+  scheme: 'rnca',
   version: packageJson.version,
-  entryPoint: "./index.js",
-  orientation: "portrait",
-  icon: "./assets/images/icon.png",
-  userInterfaceStyle: "light",
+  entryPoint: './index.js',
+  orientation: 'portrait',
+  icon: './assets/images/icon.png',
+  userInterfaceStyle: 'light',
   splash: {
-    image: "./assets/images/splash.png",
-    resizeMode: "cover",
-    backgroundColor: "#ffffff",
+    image: './assets/images/splash.png',
+    resizeMode: 'cover',
+    backgroundColor: '#ffffff',
   },
   updates: {
     fallbackToCacheTimeout: 0,
   },
-  assetBundlePatterns: ["**/*"],
+  assetBundlePatterns: ['**/*'],
   ios: {
     supportsTablet: true,
   },
   android: {
-    package: "com.carlossalasamper.reactnativecleanarchitecture",
+    package: 'com.carlossalasamper.reactnativecleanarchitecture',
     adaptiveIcon: {
-      foregroundImage: "./assets/images/adaptive-icon.png",
-      backgroundColor: "#FFFFFF",
+      foregroundImage: './assets/images/adaptive-icon.png',
+      backgroundColor: '#FFFFFF',
     },
   },
   web: {
-    favicon: "./assets/images/favicon.png",
+    favicon: './assets/images/favicon.png',
   },
   extra: {
-    EXPO_BASE_API_URL: "https://jsonplaceholder.typicode.com",
+    EXPO_BASE_API_URL: 'https://jsonplaceholder.typicode.com',
   },
 };
 

@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* TBDEduTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TBDEduTests.m */; };
+		0C1893FBE96E48E8942F5C34 /* eina-03-semibold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 115E36D486E146BA92422C6A /* eina-03-semibold.woff */; };
+		0C41F695416F45058B43FB25 /* eina-01-bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 84E199CDBC534B9AAACED526 /* eina-01-bold.woff */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2487DFDE52B54DB59FFF430D /* eina-03-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 567A11D4C3804455A4EF370D /* eina-03-regular.eot */; };
+		25C8BE1F3EE54D4FB7A7E211 /* eina-04-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */; };
+		2716D284BCBF459297BB7225 /* eina-01-semibold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = F5CA4C3C8BA44666AAC3121D /* eina-01-semibold.woff2 */; };
+		36910A1C0045476EA7405F95 /* eina-01-bold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 5352AB7566A74471A0F0C10C /* eina-01-bold.woff2 */; };
+		38F6AE26F856404C986F121E /* eina-03-bold.eot in Resources */ = {isa = PBXBuildFile; fileRef = 15D64A52477B4BC3B0F64EE2 /* eina-03-bold.eot */; };
+		3AF4C14F1DBC43A7ABE0F8BF /* eina-01-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31CD49FB78F54EC59B6AC250 /* eina-01-regular.ttf */; };
+		4230CEF4675A420B91EA01B7 /* eina-03-semibold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = EFAEDC7BAD9144F8821EFF9A /* eina-03-semibold.woff2 */; };
+		49C91914235B4487AE9330A2 /* eina-01-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C4B2642B54A47D3B9983934 /* eina-01-bold.ttf */; };
+		4F23BDE032EC4ABB9C9E8903 /* eina-01-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8BEB0368E874F1083E3451F /* eina-01-regular.woff2 */; };
+		4FCB67C8425E01E44C954846 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFB858B6B5AC2A1F3AD8C8 /* ExpoModulesProvider.swift */; };
+		52C9676916B24BD897B48BB1 /* eina-03-bold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 1C015D7CCAA649DBA33AFA1A /* eina-03-bold.woff2 */; };
+		59B91A63D70D20617D98C65F /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE91539602E692C2E1304D0 /* ExpoModulesProvider.swift */; };
+		6C4020404BB643488B693F14 /* eina-01-semibold.eot in Resources */ = {isa = PBXBuildFile; fileRef = 4033DA54B0C140EC91752DA5 /* eina-01-semibold.eot */; };
+		785B557C06744EC9A3E945A8 /* eina-04-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 11F4508FE7514703BE149006 /* eina-04-regular.eot */; };
+		7A7ACD34762E443F9C1E0EF2 /* eina-01-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1C0F4D8C18A43EABCB23725 /* eina-01-light.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		843F751533984FAC818D0D46 /* eina-01-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 5C1881A17DDA4DEABF03F23A /* eina-01-regular.woff */; };
+		8BB882827EC246198495E356 /* eina-01-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41B612AAAB274F88B8C06903 /* eina-01-semibold.ttf */; };
+		9376DC5A94234FB58DC1FAE4 /* eina-03-semibold.eot in Resources */ = {isa = PBXBuildFile; fileRef = EE0A0B073F2E47F5B33C1FEB /* eina-03-semibold.eot */; };
+		9470A8E955C7413392A8FC6E /* eina-03-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF9F6D948143A882E559A0 /* eina-03-regular.woff2 */; };
+		965CE34E79774B00B8975A65 /* eina-01-light.woff in Resources */ = {isa = PBXBuildFile; fileRef = 65376DE260ED4C1F8585128C /* eina-01-light.woff */; };
+		9DBE9318B7FB04281091F3B5 /* libPods-TBDEdu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F74AF6930A6C04BF3EF6D79C /* libPods-TBDEdu.a */; };
+		9FA4018B3AE94A3CBE3F32FF /* eina-01-light.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D450643E747244EFB8ABA94A /* eina-01-light.woff2 */; };
+		A863AED5B9724B31A77ED934 /* eina-04-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D36D672310C84DF9AD261427 /* eina-04-regular.ttf */; };
+		AAA64C62E9B84952A774E8D4 /* eina-03-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C277E7762A4CC489AEBF8A /* eina-03-regular.ttf */; };
+		AD03682CE09749F688CE653D /* eina-01-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 21838D7E2B2140A2999F1122 /* eina-01-regular.eot */; };
+		B18E58FB538B4820A82E4D10 /* eina-01-semibold.woff in Resources */ = {isa = PBXBuildFile; fileRef = A4C9099BD5164D79989452B7 /* eina-01-semibold.woff */; };
+		BFCAFEC163414812A55FF22D /* eina-03-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCC40FCFD83E4FDF8620E653 /* eina-03-bold.ttf */; };
+		C1E37E0E1A394F3FABB62771 /* eina-03-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 2756F1AC26CC4266A7188E65 /* eina-03-regular.woff */; };
+		C471862CED844E529ACD4D8A /* SVN-Cherish Moment.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34C1DAF331CC46669408A6F2 /* SVN-Cherish Moment.ttf */; };
+		D09C99B2C24B47AC93FD3013 /* eina-04-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */; };
+		D18BEDDB0D7DC9B5E47517D2 /* libPods-TBDEdu-TBDEduTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 416C6E9D04FDCD10E13D775C /* libPods-TBDEdu-TBDEduTests.a */; };
+		D28F88533F6A4A54B7C9A73C /* eina-01-bold.eot in Resources */ = {isa = PBXBuildFile; fileRef = 8DDC1D9395DA40F5986845A6 /* eina-01-bold.eot */; };
+		DAE202E99D524FC5927B6B09 /* eina-03-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD926AA17DCA40D69153270F /* eina-03-semibold.ttf */; };
+		DC8D151D21544E469ECDC6DE /* eina-03-bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3C5107D844C4187339A15 /* eina-03-bold.woff */; };
+		E3E9C2E8914A45B188122DC5 /* eina-01-light.eot in Resources */ = {isa = PBXBuildFile; fileRef = 7E4A4228D67C40F89A608B88 /* eina-01-light.eot */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = TBDEdu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* TBDEduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBDEduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* TBDEduTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBDEduTests.m; sourceTree = "<group>"; };
+		115E36D486E146BA92422C6A /* eina-03-semibold.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-semibold.woff"; path = "../assets/fonts/eina-03-semibold.woff"; sourceTree = "<group>"; };
+		11F4508FE7514703BE149006 /* eina-04-regular.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-04-regular.eot"; path = "../assets/fonts/eina-04-regular.eot"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* TBDEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBDEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TBDEdu/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TBDEdu/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TBDEdu/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TBDEdu/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TBDEdu/main.m; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = TBDEdu/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		15D64A52477B4BC3B0F64EE2 /* eina-03-bold.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-bold.eot"; path = "../assets/fonts/eina-03-bold.eot"; sourceTree = "<group>"; };
+		1A66EB8D0D8C45208AF23766 /* Pods-TBDEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBDEdu.debug.xcconfig"; path = "Target Support Files/Pods-TBDEdu/Pods-TBDEdu.debug.xcconfig"; sourceTree = "<group>"; };
+		1C015D7CCAA649DBA33AFA1A /* eina-03-bold.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-bold.woff2"; path = "../assets/fonts/eina-03-bold.woff2"; sourceTree = "<group>"; };
+		21838D7E2B2140A2999F1122 /* eina-01-regular.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-regular.eot"; path = "../assets/fonts/eina-01-regular.eot"; sourceTree = "<group>"; };
+		2756F1AC26CC4266A7188E65 /* eina-03-regular.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-regular.woff"; path = "../assets/fonts/eina-03-regular.woff"; sourceTree = "<group>"; };
+		28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-04-regular.woff2"; path = "../assets/fonts/eina-04-regular.woff2"; sourceTree = "<group>"; };
+		2FAF9F6D948143A882E559A0 /* eina-03-regular.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-regular.woff2"; path = "../assets/fonts/eina-03-regular.woff2"; sourceTree = "<group>"; };
+		31CD49FB78F54EC59B6AC250 /* eina-01-regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-regular.ttf"; path = "../assets/fonts/eina-01-regular.ttf"; sourceTree = "<group>"; };
+		34C1DAF331CC46669408A6F2 /* SVN-Cherish Moment.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SVN-Cherish Moment.ttf"; path = "../assets/fonts/SVN-Cherish Moment.ttf"; sourceTree = "<group>"; };
+		37C277E7762A4CC489AEBF8A /* eina-03-regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-regular.ttf"; path = "../assets/fonts/eina-03-regular.ttf"; sourceTree = "<group>"; };
+		4033DA54B0C140EC91752DA5 /* eina-01-semibold.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-semibold.eot"; path = "../assets/fonts/eina-01-semibold.eot"; sourceTree = "<group>"; };
+		416C6E9D04FDCD10E13D775C /* libPods-TBDEdu-TBDEduTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBDEdu-TBDEduTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B612AAAB274F88B8C06903 /* eina-01-semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-semibold.ttf"; path = "../assets/fonts/eina-01-semibold.ttf"; sourceTree = "<group>"; };
+		5352AB7566A74471A0F0C10C /* eina-01-bold.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-bold.woff2"; path = "../assets/fonts/eina-01-bold.woff2"; sourceTree = "<group>"; };
+		567A11D4C3804455A4EF370D /* eina-03-regular.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-regular.eot"; path = "../assets/fonts/eina-03-regular.eot"; sourceTree = "<group>"; };
+		5AAFB858B6B5AC2A1F3AD8C8 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-TBDEdu/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		5C1881A17DDA4DEABF03F23A /* eina-01-regular.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-regular.woff"; path = "../assets/fonts/eina-01-regular.woff"; sourceTree = "<group>"; };
+		5EE91539602E692C2E1304D0 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-TBDEdu-TBDEduTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		65376DE260ED4C1F8585128C /* eina-01-light.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-light.woff"; path = "../assets/fonts/eina-01-light.woff"; sourceTree = "<group>"; };
+		6FB3C5107D844C4187339A15 /* eina-03-bold.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-bold.woff"; path = "../assets/fonts/eina-03-bold.woff"; sourceTree = "<group>"; };
+		7C4B2642B54A47D3B9983934 /* eina-01-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-bold.ttf"; path = "../assets/fonts/eina-01-bold.ttf"; sourceTree = "<group>"; };
+		7E4A4228D67C40F89A608B88 /* eina-01-light.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-light.eot"; path = "../assets/fonts/eina-01-light.eot"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TBDEdu/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84E199CDBC534B9AAACED526 /* eina-01-bold.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-bold.woff"; path = "../assets/fonts/eina-01-bold.woff"; sourceTree = "<group>"; };
+		8AF79155CAE40B1B9E8862DB /* Pods-TBDEdu-TBDEduTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBDEdu-TBDEduTests.debug.xcconfig"; path = "Target Support Files/Pods-TBDEdu-TBDEduTests/Pods-TBDEdu-TBDEduTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DDC1D9395DA40F5986845A6 /* eina-01-bold.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-bold.eot"; path = "../assets/fonts/eina-01-bold.eot"; sourceTree = "<group>"; };
+		A4C9099BD5164D79989452B7 /* eina-01-semibold.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-semibold.woff"; path = "../assets/fonts/eina-01-semibold.woff"; sourceTree = "<group>"; };
+		BFD098785FE14F75E6FAFD09 /* Pods-TBDEdu-TBDEduTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBDEdu-TBDEduTests.release.xcconfig"; path = "Target Support Files/Pods-TBDEdu-TBDEduTests/Pods-TBDEdu-TBDEduTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1C0F4D8C18A43EABCB23725 /* eina-01-light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-light.ttf"; path = "../assets/fonts/eina-01-light.ttf"; sourceTree = "<group>"; };
+		C41ED8FE952DE89C6CCE95BC /* Pods-TBDEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBDEdu.release.xcconfig"; path = "Target Support Files/Pods-TBDEdu/Pods-TBDEdu.release.xcconfig"; sourceTree = "<group>"; };
+		D36D672310C84DF9AD261427 /* eina-04-regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-04-regular.ttf"; path = "../assets/fonts/eina-04-regular.ttf"; sourceTree = "<group>"; };
+		D450643E747244EFB8ABA94A /* eina-01-light.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-light.woff2"; path = "../assets/fonts/eina-01-light.woff2"; sourceTree = "<group>"; };
+		D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-04-regular.woff"; path = "../assets/fonts/eina-04-regular.woff"; sourceTree = "<group>"; };
+		D8BEB0368E874F1083E3451F /* eina-01-regular.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-regular.woff2"; path = "../assets/fonts/eina-01-regular.woff2"; sourceTree = "<group>"; };
+		DCC40FCFD83E4FDF8620E653 /* eina-03-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-bold.ttf"; path = "../assets/fonts/eina-03-bold.ttf"; sourceTree = "<group>"; };
+		DD926AA17DCA40D69153270F /* eina-03-semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-semibold.ttf"; path = "../assets/fonts/eina-03-semibold.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE0A0B073F2E47F5B33C1FEB /* eina-03-semibold.eot */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-semibold.eot"; path = "../assets/fonts/eina-03-semibold.eot"; sourceTree = "<group>"; };
+		EFAEDC7BAD9144F8821EFF9A /* eina-03-semibold.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-03-semibold.woff2"; path = "../assets/fonts/eina-03-semibold.woff2"; sourceTree = "<group>"; };
+		F5CA4C3C8BA44666AAC3121D /* eina-01-semibold.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "eina-01-semibold.woff2"; path = "../assets/fonts/eina-01-semibold.woff2"; sourceTree = "<group>"; };
+		F74AF6930A6C04BF3EF6D79C /* libPods-TBDEdu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBDEdu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18BEDDB0D7DC9B5E47517D2 /* libPods-TBDEdu-TBDEduTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBE9318B7FB04281091F3B5 /* libPods-TBDEdu.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* TBDEduTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* TBDEduTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = TBDEduTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* TBDEdu */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+			);
+			name = TBDEdu;
+			sourceTree = "<group>";
+		};
+		212BA0D309D64B05840AEDE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C4B2642B54A47D3B9983934 /* eina-01-bold.ttf */,
+				C1C0F4D8C18A43EABCB23725 /* eina-01-light.ttf */,
+				31CD49FB78F54EC59B6AC250 /* eina-01-regular.ttf */,
+				41B612AAAB274F88B8C06903 /* eina-01-semibold.ttf */,
+				DCC40FCFD83E4FDF8620E653 /* eina-03-bold.ttf */,
+				37C277E7762A4CC489AEBF8A /* eina-03-regular.ttf */,
+				DD926AA17DCA40D69153270F /* eina-03-semibold.ttf */,
+				D36D672310C84DF9AD261427 /* eina-04-regular.ttf */,
+				8DDC1D9395DA40F5986845A6 /* eina-01-bold.eot */,
+				84E199CDBC534B9AAACED526 /* eina-01-bold.woff */,
+				5352AB7566A74471A0F0C10C /* eina-01-bold.woff2 */,
+				7E4A4228D67C40F89A608B88 /* eina-01-light.eot */,
+				65376DE260ED4C1F8585128C /* eina-01-light.woff */,
+				D450643E747244EFB8ABA94A /* eina-01-light.woff2 */,
+				21838D7E2B2140A2999F1122 /* eina-01-regular.eot */,
+				5C1881A17DDA4DEABF03F23A /* eina-01-regular.woff */,
+				D8BEB0368E874F1083E3451F /* eina-01-regular.woff2 */,
+				4033DA54B0C140EC91752DA5 /* eina-01-semibold.eot */,
+				A4C9099BD5164D79989452B7 /* eina-01-semibold.woff */,
+				F5CA4C3C8BA44666AAC3121D /* eina-01-semibold.woff2 */,
+				15D64A52477B4BC3B0F64EE2 /* eina-03-bold.eot */,
+				6FB3C5107D844C4187339A15 /* eina-03-bold.woff */,
+				1C015D7CCAA649DBA33AFA1A /* eina-03-bold.woff2 */,
+				567A11D4C3804455A4EF370D /* eina-03-regular.eot */,
+				2756F1AC26CC4266A7188E65 /* eina-03-regular.woff */,
+				2FAF9F6D948143A882E559A0 /* eina-03-regular.woff2 */,
+				EE0A0B073F2E47F5B33C1FEB /* eina-03-semibold.eot */,
+				115E36D486E146BA92422C6A /* eina-03-semibold.woff */,
+				EFAEDC7BAD9144F8821EFF9A /* eina-03-semibold.woff2 */,
+				11F4508FE7514703BE149006 /* eina-04-regular.eot */,
+				D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */,
+				28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */,
+				34C1DAF331CC46669408A6F2 /* SVN-Cherish Moment.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				F74AF6930A6C04BF3EF6D79C /* libPods-TBDEdu.a */,
+				416C6E9D04FDCD10E13D775C /* libPods-TBDEdu-TBDEduTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EFEC2F702DC794203EF2A74 /* TBDEdu */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFB858B6B5AC2A1F3AD8C8 /* ExpoModulesProvider.swift */,
+			);
+			name = TBDEdu;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* TBDEdu */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* TBDEduTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				88B77B145DD483FCBA223A32 /* ExpoModulesProviders */,
+				212BA0D309D64B05840AEDE4 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* TBDEdu.app */,
+				00E356EE1AD99517003FC87E /* TBDEduTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88B77B145DD483FCBA223A32 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				5EFEC2F702DC794203EF2A74 /* TBDEdu */,
+				93621B3D3E5B1F87ED2B96A0 /* TBDEduTests */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		93621B3D3E5B1F87ED2B96A0 /* TBDEduTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EE91539602E692C2E1304D0 /* ExpoModulesProvider.swift */,
+			);
+			name = TBDEduTests;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A66EB8D0D8C45208AF23766 /* Pods-TBDEdu.debug.xcconfig */,
+				C41ED8FE952DE89C6CCE95BC /* Pods-TBDEdu.release.xcconfig */,
+				8AF79155CAE40B1B9E8862DB /* Pods-TBDEdu-TBDEduTests.debug.xcconfig */,
+				BFD098785FE14F75E6FAFD09 /* Pods-TBDEdu-TBDEduTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* TBDEduTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TBDEduTests" */;
+			buildPhases = (
+				857915426DC55BE17B97B8BE /* [CP] Check Pods Manifest.lock */,
+				C1E514972C2FE7EA165676E5 /* [Expo] Configure project */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				E2E64337DB5DC209FDFE104A /* [CP] Embed Pods Frameworks */,
+				6637F02FFB4394DA80E3165D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = TBDEduTests;
+			productName = TBDEduTests;
+			productReference = 00E356EE1AD99517003FC87E /* TBDEduTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* TBDEdu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TBDEdu" */;
+			buildPhases = (
+				FAA8826EE5A99D8528AF8F82 /* [CP] Check Pods Manifest.lock */,
+				F59B27EEF4F9914FE01688F1 /* [Expo] Configure project */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				AC1A009E4B7F0078C66EA563 /* [CP] Embed Pods Frameworks */,
+				38594AAB5E7A0D81B10FE925 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBDEdu;
+			productName = TBDEdu;
+			productReference = 13B07F961A680F5B00A75B9A /* TBDEdu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TBDEdu" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* TBDEdu */,
+				00E356ED1AD99517003FC87E /* TBDEduTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				49C91914235B4487AE9330A2 /* eina-01-bold.ttf in Resources */,
+				7A7ACD34762E443F9C1E0EF2 /* eina-01-light.ttf in Resources */,
+				3AF4C14F1DBC43A7ABE0F8BF /* eina-01-regular.ttf in Resources */,
+				8BB882827EC246198495E356 /* eina-01-semibold.ttf in Resources */,
+				BFCAFEC163414812A55FF22D /* eina-03-bold.ttf in Resources */,
+				AAA64C62E9B84952A774E8D4 /* eina-03-regular.ttf in Resources */,
+				DAE202E99D524FC5927B6B09 /* eina-03-semibold.ttf in Resources */,
+				A863AED5B9724B31A77ED934 /* eina-04-regular.ttf in Resources */,
+				D28F88533F6A4A54B7C9A73C /* eina-01-bold.eot in Resources */,
+				0C41F695416F45058B43FB25 /* eina-01-bold.woff in Resources */,
+				36910A1C0045476EA7405F95 /* eina-01-bold.woff2 in Resources */,
+				E3E9C2E8914A45B188122DC5 /* eina-01-light.eot in Resources */,
+				965CE34E79774B00B8975A65 /* eina-01-light.woff in Resources */,
+				9FA4018B3AE94A3CBE3F32FF /* eina-01-light.woff2 in Resources */,
+				AD03682CE09749F688CE653D /* eina-01-regular.eot in Resources */,
+				843F751533984FAC818D0D46 /* eina-01-regular.woff in Resources */,
+				4F23BDE032EC4ABB9C9E8903 /* eina-01-regular.woff2 in Resources */,
+				6C4020404BB643488B693F14 /* eina-01-semibold.eot in Resources */,
+				B18E58FB538B4820A82E4D10 /* eina-01-semibold.woff in Resources */,
+				2716D284BCBF459297BB7225 /* eina-01-semibold.woff2 in Resources */,
+				38F6AE26F856404C986F121E /* eina-03-bold.eot in Resources */,
+				DC8D151D21544E469ECDC6DE /* eina-03-bold.woff in Resources */,
+				52C9676916B24BD897B48BB1 /* eina-03-bold.woff2 in Resources */,
+				2487DFDE52B54DB59FFF430D /* eina-03-regular.eot in Resources */,
+				C1E37E0E1A394F3FABB62771 /* eina-03-regular.woff in Resources */,
+				9470A8E955C7413392A8FC6E /* eina-03-regular.woff2 in Resources */,
+				9376DC5A94234FB58DC1FAE4 /* eina-03-semibold.eot in Resources */,
+				0C1893FBE96E48E8942F5C34 /* eina-03-semibold.woff in Resources */,
+				4230CEF4675A420B91EA01B7 /* eina-03-semibold.woff2 in Resources */,
+				785B557C06744EC9A3E945A8 /* eina-04-regular.eot in Resources */,
+				D09C99B2C24B47AC93FD3013 /* eina-04-regular.woff in Resources */,
+				25C8BE1F3EE54D4FB7A7E211 /* eina-04-regular.woff2 in Resources */,
+				C471862CED844E529ACD4D8A /* SVN-Cherish Moment.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		38594AAB5E7A0D81B10FE925 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBDEdu/Pods-TBDEdu-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBDEdu/Pods-TBDEdu-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TBDEdu/Pods-TBDEdu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6637F02FFB4394DA80E3165D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBDEdu-TBDEduTests/Pods-TBDEdu-TBDEduTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBDEdu-TBDEduTests/Pods-TBDEdu-TBDEduTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TBDEdu-TBDEduTests/Pods-TBDEdu-TBDEduTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		857915426DC55BE17B97B8BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TBDEdu-TBDEduTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1A009E4B7F0078C66EA563 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBDEdu/Pods-TBDEdu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBDEdu/Pods-TBDEdu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TBDEdu/Pods-TBDEdu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E514972C2FE7EA165676E5 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-TBDEdu-TBDEduTests/expo-configure-project.sh\"\n";
+		};
+		E2E64337DB5DC209FDFE104A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBDEdu-TBDEduTests/Pods-TBDEdu-TBDEduTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TBDEdu-TBDEduTests/Pods-TBDEdu-TBDEduTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TBDEdu-TBDEduTests/Pods-TBDEdu-TBDEduTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59B27EEF4F9914FE01688F1 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-TBDEdu/expo-configure-project.sh\"\n";
+		};
+		FAA8826EE5A99D8528AF8F82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TBDEdu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* TBDEduTests.m in Sources */,
+				59B91A63D70D20617D98C65F /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				4FCB67C8425E01E44C954846 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* TBDEdu */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF79155CAE40B1B9E8862DB /* Pods-TBDEdu-TBDEduTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VDXKAYGU93;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TBDEduTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alphadex.tbd.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBDEdu.app/TBDEdu";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD098785FE14F75E6FAFD09 /* Pods-TBDEdu-TBDEduTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = VDXKAYGU93;
+				INFOPLIST_FILE = TBDEduTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alphadex.tbd.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBDEdu.app/TBDEdu";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A66EB8D0D8C45208AF23766 /* Pods-TBDEdu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDXKAYGU93;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TBDEdu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TBD-Edu";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alphadex.tbd.app;
+				PRODUCT_NAME = TBDEdu;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41ED8FE952DE89C6CCE95BC /* Pods-TBDEdu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VDXKAYGU93;
+				INFOPLIST_FILE = TBDEdu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TBD-Edu";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alphadex.tbd.app;
+				PRODUCT_NAME = TBDEdu;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CXX = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CXX = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TBDEduTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TBDEdu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TBDEdu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

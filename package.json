@@ -1,5 +1,5 @@
 {
-  "name": "react-native-clean-architecture",
+  "name": "tbd-edu",
   "version": "1.0.0",
   "scripts": {
     "prepare": "husky install",
@@ -32,6 +32,8 @@
     "react-native": "0.73.8",
     "react-native-safe-area-context": "^4.3.1",
     "react-native-screens": "^3.31.1",
+    "react-native-size-matters": "^0.4.2",
+    "react-native-svg": "^15.3.0",
     "react-native-web": "^0.18.7"
   },
   "devDependencies": {
@@ -45,6 +47,7 @@
     "@react-native/eslint-config": "0.73.2",
     "@react-native/metro-config": "0.73.5",
     "@react-native/typescript-config": "0.73.1",
+    "@types/color": "^3.0.6",
     "@types/i18n-js": "^3.8.3",
     "@types/react": "^18.2.6",
     "@types/react-native": "~0.69.1",
