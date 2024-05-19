@@ -1,4 +1,4 @@
-package com.carlossalasamper.reactnativecleanarchitecture
+package com.alphadex.tbd.app
 import expo.modules.ReactActivityDelegateWrapper
 
 import com.facebook.react.ReactActivity

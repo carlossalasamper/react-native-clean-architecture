@@ -1,4 +1,4 @@
-package com.carlossalasamper.reactnativecleanarchitecture
+package com.alphadex.tbd.app
 
 import android.app.Application
 import com.facebook.react.PackageList
