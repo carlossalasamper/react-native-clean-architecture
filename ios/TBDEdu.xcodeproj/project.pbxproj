@@ -16,6 +16,38 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9DBE9318B7FB04281091F3B5 /* libPods-TBDEdu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F74AF6930A6C04BF3EF6D79C /* libPods-TBDEdu.a */; };
 		D18BEDDB0D7DC9B5E47517D2 /* libPods-TBDEdu-TBDEduTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 416C6E9D04FDCD10E13D775C /* libPods-TBDEdu-TBDEduTests.a */; };
+		49C91914235B4487AE9330A2 /* eina-01-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C4B2642B54A47D3B9983934 /* eina-01-bold.ttf */; };
+		7A7ACD34762E443F9C1E0EF2 /* eina-01-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1C0F4D8C18A43EABCB23725 /* eina-01-light.ttf */; };
+		3AF4C14F1DBC43A7ABE0F8BF /* eina-01-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31CD49FB78F54EC59B6AC250 /* eina-01-regular.ttf */; };
+		8BB882827EC246198495E356 /* eina-01-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41B612AAAB274F88B8C06903 /* eina-01-semibold.ttf */; };
+		BFCAFEC163414812A55FF22D /* eina-03-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCC40FCFD83E4FDF8620E653 /* eina-03-bold.ttf */; };
+		AAA64C62E9B84952A774E8D4 /* eina-03-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C277E7762A4CC489AEBF8A /* eina-03-regular.ttf */; };
+		DAE202E99D524FC5927B6B09 /* eina-03-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD926AA17DCA40D69153270F /* eina-03-semibold.ttf */; };
+		A863AED5B9724B31A77ED934 /* eina-04-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D36D672310C84DF9AD261427 /* eina-04-regular.ttf */; };
+		D28F88533F6A4A54B7C9A73C /* eina-01-bold.eot in Resources */ = {isa = PBXBuildFile; fileRef = 8DDC1D9395DA40F5986845A6 /* eina-01-bold.eot */; };
+		0C41F695416F45058B43FB25 /* eina-01-bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 84E199CDBC534B9AAACED526 /* eina-01-bold.woff */; };
+		36910A1C0045476EA7405F95 /* eina-01-bold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 5352AB7566A74471A0F0C10C /* eina-01-bold.woff2 */; };
+		E3E9C2E8914A45B188122DC5 /* eina-01-light.eot in Resources */ = {isa = PBXBuildFile; fileRef = 7E4A4228D67C40F89A608B88 /* eina-01-light.eot */; };
+		965CE34E79774B00B8975A65 /* eina-01-light.woff in Resources */ = {isa = PBXBuildFile; fileRef = 65376DE260ED4C1F8585128C /* eina-01-light.woff */; };
+		9FA4018B3AE94A3CBE3F32FF /* eina-01-light.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D450643E747244EFB8ABA94A /* eina-01-light.woff2 */; };
+		AD03682CE09749F688CE653D /* eina-01-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 21838D7E2B2140A2999F1122 /* eina-01-regular.eot */; };
+		843F751533984FAC818D0D46 /* eina-01-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 5C1881A17DDA4DEABF03F23A /* eina-01-regular.woff */; };
+		4F23BDE032EC4ABB9C9E8903 /* eina-01-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8BEB0368E874F1083E3451F /* eina-01-regular.woff2 */; };
+		6C4020404BB643488B693F14 /* eina-01-semibold.eot in Resources */ = {isa = PBXBuildFile; fileRef = 4033DA54B0C140EC91752DA5 /* eina-01-semibold.eot */; };
+		B18E58FB538B4820A82E4D10 /* eina-01-semibold.woff in Resources */ = {isa = PBXBuildFile; fileRef = A4C9099BD5164D79989452B7 /* eina-01-semibold.woff */; };
+		2716D284BCBF459297BB7225 /* eina-01-semibold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = F5CA4C3C8BA44666AAC3121D /* eina-01-semibold.woff2 */; };
+		38F6AE26F856404C986F121E /* eina-03-bold.eot in Resources */ = {isa = PBXBuildFile; fileRef = 15D64A52477B4BC3B0F64EE2 /* eina-03-bold.eot */; };
+		DC8D151D21544E469ECDC6DE /* eina-03-bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3C5107D844C4187339A15 /* eina-03-bold.woff */; };
+		52C9676916B24BD897B48BB1 /* eina-03-bold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 1C015D7CCAA649DBA33AFA1A /* eina-03-bold.woff2 */; };
+		2487DFDE52B54DB59FFF430D /* eina-03-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 567A11D4C3804455A4EF370D /* eina-03-regular.eot */; };
+		C1E37E0E1A394F3FABB62771 /* eina-03-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 2756F1AC26CC4266A7188E65 /* eina-03-regular.woff */; };
+		9470A8E955C7413392A8FC6E /* eina-03-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF9F6D948143A882E559A0 /* eina-03-regular.woff2 */; };
+		9376DC5A94234FB58DC1FAE4 /* eina-03-semibold.eot in Resources */ = {isa = PBXBuildFile; fileRef = EE0A0B073F2E47F5B33C1FEB /* eina-03-semibold.eot */; };
+		0C1893FBE96E48E8942F5C34 /* eina-03-semibold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 115E36D486E146BA92422C6A /* eina-03-semibold.woff */; };
+		4230CEF4675A420B91EA01B7 /* eina-03-semibold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = EFAEDC7BAD9144F8821EFF9A /* eina-03-semibold.woff2 */; };
+		785B557C06744EC9A3E945A8 /* eina-04-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 11F4508FE7514703BE149006 /* eina-04-regular.eot */; };
+		D09C99B2C24B47AC93FD3013 /* eina-04-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */; };
+		25C8BE1F3EE54D4FB7A7E211 /* eina-04-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +81,38 @@
 		C41ED8FE952DE89C6CCE95BC /* Pods-TBDEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBDEdu.release.xcconfig"; path = "Target Support Files/Pods-TBDEdu/Pods-TBDEdu.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F74AF6930A6C04BF3EF6D79C /* libPods-TBDEdu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBDEdu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4B2642B54A47D3B9983934 /* eina-01-bold.ttf */ = {isa = PBXFileReference; name = "eina-01-bold.ttf"; path = "../assets/fonts/eina-01-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1C0F4D8C18A43EABCB23725 /* eina-01-light.ttf */ = {isa = PBXFileReference; name = "eina-01-light.ttf"; path = "../assets/fonts/eina-01-light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		31CD49FB78F54EC59B6AC250 /* eina-01-regular.ttf */ = {isa = PBXFileReference; name = "eina-01-regular.ttf"; path = "../assets/fonts/eina-01-regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		41B612AAAB274F88B8C06903 /* eina-01-semibold.ttf */ = {isa = PBXFileReference; name = "eina-01-semibold.ttf"; path = "../assets/fonts/eina-01-semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCC40FCFD83E4FDF8620E653 /* eina-03-bold.ttf */ = {isa = PBXFileReference; name = "eina-03-bold.ttf"; path = "../assets/fonts/eina-03-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		37C277E7762A4CC489AEBF8A /* eina-03-regular.ttf */ = {isa = PBXFileReference; name = "eina-03-regular.ttf"; path = "../assets/fonts/eina-03-regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DD926AA17DCA40D69153270F /* eina-03-semibold.ttf */ = {isa = PBXFileReference; name = "eina-03-semibold.ttf"; path = "../assets/fonts/eina-03-semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D36D672310C84DF9AD261427 /* eina-04-regular.ttf */ = {isa = PBXFileReference; name = "eina-04-regular.ttf"; path = "../assets/fonts/eina-04-regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8DDC1D9395DA40F5986845A6 /* eina-01-bold.eot */ = {isa = PBXFileReference; name = "eina-01-bold.eot"; path = "../assets/fonts/eina-01-bold.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		84E199CDBC534B9AAACED526 /* eina-01-bold.woff */ = {isa = PBXFileReference; name = "eina-01-bold.woff"; path = "../assets/fonts/eina-01-bold.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5352AB7566A74471A0F0C10C /* eina-01-bold.woff2 */ = {isa = PBXFileReference; name = "eina-01-bold.woff2"; path = "../assets/fonts/eina-01-bold.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7E4A4228D67C40F89A608B88 /* eina-01-light.eot */ = {isa = PBXFileReference; name = "eina-01-light.eot"; path = "../assets/fonts/eina-01-light.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		65376DE260ED4C1F8585128C /* eina-01-light.woff */ = {isa = PBXFileReference; name = "eina-01-light.woff"; path = "../assets/fonts/eina-01-light.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D450643E747244EFB8ABA94A /* eina-01-light.woff2 */ = {isa = PBXFileReference; name = "eina-01-light.woff2"; path = "../assets/fonts/eina-01-light.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21838D7E2B2140A2999F1122 /* eina-01-regular.eot */ = {isa = PBXFileReference; name = "eina-01-regular.eot"; path = "../assets/fonts/eina-01-regular.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C1881A17DDA4DEABF03F23A /* eina-01-regular.woff */ = {isa = PBXFileReference; name = "eina-01-regular.woff"; path = "../assets/fonts/eina-01-regular.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D8BEB0368E874F1083E3451F /* eina-01-regular.woff2 */ = {isa = PBXFileReference; name = "eina-01-regular.woff2"; path = "../assets/fonts/eina-01-regular.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4033DA54B0C140EC91752DA5 /* eina-01-semibold.eot */ = {isa = PBXFileReference; name = "eina-01-semibold.eot"; path = "../assets/fonts/eina-01-semibold.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A4C9099BD5164D79989452B7 /* eina-01-semibold.woff */ = {isa = PBXFileReference; name = "eina-01-semibold.woff"; path = "../assets/fonts/eina-01-semibold.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F5CA4C3C8BA44666AAC3121D /* eina-01-semibold.woff2 */ = {isa = PBXFileReference; name = "eina-01-semibold.woff2"; path = "../assets/fonts/eina-01-semibold.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		15D64A52477B4BC3B0F64EE2 /* eina-03-bold.eot */ = {isa = PBXFileReference; name = "eina-03-bold.eot"; path = "../assets/fonts/eina-03-bold.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6FB3C5107D844C4187339A15 /* eina-03-bold.woff */ = {isa = PBXFileReference; name = "eina-03-bold.woff"; path = "../assets/fonts/eina-03-bold.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1C015D7CCAA649DBA33AFA1A /* eina-03-bold.woff2 */ = {isa = PBXFileReference; name = "eina-03-bold.woff2"; path = "../assets/fonts/eina-03-bold.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		567A11D4C3804455A4EF370D /* eina-03-regular.eot */ = {isa = PBXFileReference; name = "eina-03-regular.eot"; path = "../assets/fonts/eina-03-regular.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2756F1AC26CC4266A7188E65 /* eina-03-regular.woff */ = {isa = PBXFileReference; name = "eina-03-regular.woff"; path = "../assets/fonts/eina-03-regular.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2FAF9F6D948143A882E559A0 /* eina-03-regular.woff2 */ = {isa = PBXFileReference; name = "eina-03-regular.woff2"; path = "../assets/fonts/eina-03-regular.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE0A0B073F2E47F5B33C1FEB /* eina-03-semibold.eot */ = {isa = PBXFileReference; name = "eina-03-semibold.eot"; path = "../assets/fonts/eina-03-semibold.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		115E36D486E146BA92422C6A /* eina-03-semibold.woff */ = {isa = PBXFileReference; name = "eina-03-semibold.woff"; path = "../assets/fonts/eina-03-semibold.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EFAEDC7BAD9144F8821EFF9A /* eina-03-semibold.woff2 */ = {isa = PBXFileReference; name = "eina-03-semibold.woff2"; path = "../assets/fonts/eina-03-semibold.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		11F4508FE7514703BE149006 /* eina-04-regular.eot */ = {isa = PBXFileReference; name = "eina-04-regular.eot"; path = "../assets/fonts/eina-04-regular.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */ = {isa = PBXFileReference; name = "eina-04-regular.woff"; path = "../assets/fonts/eina-04-regular.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */ = {isa = PBXFileReference; name = "eina-04-regular.woff2"; path = "../assets/fonts/eina-04-regular.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +201,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				88B77B145DD483FCBA223A32 /* ExpoModulesProviders */,
+				212BA0D309D64B05840AEDE4 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -179,6 +244,46 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		212BA0D309D64B05840AEDE4 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				7C4B2642B54A47D3B9983934 /* eina-01-bold.ttf */,
+				C1C0F4D8C18A43EABCB23725 /* eina-01-light.ttf */,
+				31CD49FB78F54EC59B6AC250 /* eina-01-regular.ttf */,
+				41B612AAAB274F88B8C06903 /* eina-01-semibold.ttf */,
+				DCC40FCFD83E4FDF8620E653 /* eina-03-bold.ttf */,
+				37C277E7762A4CC489AEBF8A /* eina-03-regular.ttf */,
+				DD926AA17DCA40D69153270F /* eina-03-semibold.ttf */,
+				D36D672310C84DF9AD261427 /* eina-04-regular.ttf */,
+				8DDC1D9395DA40F5986845A6 /* eina-01-bold.eot */,
+				84E199CDBC534B9AAACED526 /* eina-01-bold.woff */,
+				5352AB7566A74471A0F0C10C /* eina-01-bold.woff2 */,
+				7E4A4228D67C40F89A608B88 /* eina-01-light.eot */,
+				65376DE260ED4C1F8585128C /* eina-01-light.woff */,
+				D450643E747244EFB8ABA94A /* eina-01-light.woff2 */,
+				21838D7E2B2140A2999F1122 /* eina-01-regular.eot */,
+				5C1881A17DDA4DEABF03F23A /* eina-01-regular.woff */,
+				D8BEB0368E874F1083E3451F /* eina-01-regular.woff2 */,
+				4033DA54B0C140EC91752DA5 /* eina-01-semibold.eot */,
+				A4C9099BD5164D79989452B7 /* eina-01-semibold.woff */,
+				F5CA4C3C8BA44666AAC3121D /* eina-01-semibold.woff2 */,
+				15D64A52477B4BC3B0F64EE2 /* eina-03-bold.eot */,
+				6FB3C5107D844C4187339A15 /* eina-03-bold.woff */,
+				1C015D7CCAA649DBA33AFA1A /* eina-03-bold.woff2 */,
+				567A11D4C3804455A4EF370D /* eina-03-regular.eot */,
+				2756F1AC26CC4266A7188E65 /* eina-03-regular.woff */,
+				2FAF9F6D948143A882E559A0 /* eina-03-regular.woff2 */,
+				EE0A0B073F2E47F5B33C1FEB /* eina-03-semibold.eot */,
+				115E36D486E146BA92422C6A /* eina-03-semibold.woff */,
+				EFAEDC7BAD9144F8821EFF9A /* eina-03-semibold.woff2 */,
+				11F4508FE7514703BE149006 /* eina-04-regular.eot */,
+				D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */,
+				28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -277,6 +382,38 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				49C91914235B4487AE9330A2 /* eina-01-bold.ttf in Resources */,
+				7A7ACD34762E443F9C1E0EF2 /* eina-01-light.ttf in Resources */,
+				3AF4C14F1DBC43A7ABE0F8BF /* eina-01-regular.ttf in Resources */,
+				8BB882827EC246198495E356 /* eina-01-semibold.ttf in Resources */,
+				BFCAFEC163414812A55FF22D /* eina-03-bold.ttf in Resources */,
+				AAA64C62E9B84952A774E8D4 /* eina-03-regular.ttf in Resources */,
+				DAE202E99D524FC5927B6B09 /* eina-03-semibold.ttf in Resources */,
+				A863AED5B9724B31A77ED934 /* eina-04-regular.ttf in Resources */,
+				D28F88533F6A4A54B7C9A73C /* eina-01-bold.eot in Resources */,
+				0C41F695416F45058B43FB25 /* eina-01-bold.woff in Resources */,
+				36910A1C0045476EA7405F95 /* eina-01-bold.woff2 in Resources */,
+				E3E9C2E8914A45B188122DC5 /* eina-01-light.eot in Resources */,
+				965CE34E79774B00B8975A65 /* eina-01-light.woff in Resources */,
+				9FA4018B3AE94A3CBE3F32FF /* eina-01-light.woff2 in Resources */,
+				AD03682CE09749F688CE653D /* eina-01-regular.eot in Resources */,
+				843F751533984FAC818D0D46 /* eina-01-regular.woff in Resources */,
+				4F23BDE032EC4ABB9C9E8903 /* eina-01-regular.woff2 in Resources */,
+				6C4020404BB643488B693F14 /* eina-01-semibold.eot in Resources */,
+				B18E58FB538B4820A82E4D10 /* eina-01-semibold.woff in Resources */,
+				2716D284BCBF459297BB7225 /* eina-01-semibold.woff2 in Resources */,
+				38F6AE26F856404C986F121E /* eina-03-bold.eot in Resources */,
+				DC8D151D21544E469ECDC6DE /* eina-03-bold.woff in Resources */,
+				52C9676916B24BD897B48BB1 /* eina-03-bold.woff2 in Resources */,
+				2487DFDE52B54DB59FFF430D /* eina-03-regular.eot in Resources */,
+				C1E37E0E1A394F3FABB62771 /* eina-03-regular.woff in Resources */,
+				9470A8E955C7413392A8FC6E /* eina-03-regular.woff2 in Resources */,
+				9376DC5A94234FB58DC1FAE4 /* eina-03-semibold.eot in Resources */,
+				0C1893FBE96E48E8942F5C34 /* eina-03-semibold.woff in Resources */,
+				4230CEF4675A420B91EA01B7 /* eina-03-semibold.woff2 in Resources */,
+				785B557C06744EC9A3E945A8 /* eina-04-regular.eot in Resources */,
+				D09C99B2C24B47AC93FD3013 /* eina-04-regular.woff in Resources */,
+				25C8BE1F3EE54D4FB7A7E211 /* eina-04-regular.woff2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
