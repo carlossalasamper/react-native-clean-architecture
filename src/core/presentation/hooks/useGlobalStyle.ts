@@ -7,5 +7,9 @@ export default function useGlobalStyle() {
       fontSize: 15,
       fontFamily: FontFamily.Eina01Bold,
     },
+    txtWord: {
+      fontSize: 40,
+      fontFamily: FontFamily.SVNCherishMoment,
+    },
   });
 }

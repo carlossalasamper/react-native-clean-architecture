@@ -2,6 +2,10 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "assets/fonts/SVN-Cherish Moment.ttf",
+      "sha1": "a12c6c66af6f88d6bbdebb83020f03604b4b55ce"
+    },
+    {
       "path": "assets/fonts/eina-01-bold.eot",
       "sha1": "dc7909d91bb99897c774359e10138a979b95f8c5"
     },

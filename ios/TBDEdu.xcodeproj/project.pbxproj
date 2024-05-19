@@ -48,6 +48,7 @@
 		785B557C06744EC9A3E945A8 /* eina-04-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 11F4508FE7514703BE149006 /* eina-04-regular.eot */; };
 		D09C99B2C24B47AC93FD3013 /* eina-04-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */; };
 		25C8BE1F3EE54D4FB7A7E211 /* eina-04-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */; };
+		C471862CED844E529ACD4D8A /* SVN-Cherish Moment.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34C1DAF331CC46669408A6F2 /* SVN-Cherish Moment.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		11F4508FE7514703BE149006 /* eina-04-regular.eot */ = {isa = PBXFileReference; name = "eina-04-regular.eot"; path = "../assets/fonts/eina-04-regular.eot"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */ = {isa = PBXFileReference; name = "eina-04-regular.woff"; path = "../assets/fonts/eina-04-regular.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */ = {isa = PBXFileReference; name = "eina-04-regular.woff2"; path = "../assets/fonts/eina-04-regular.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		34C1DAF331CC46669408A6F2 /* SVN-Cherish Moment.ttf */ = {isa = PBXFileReference; name = "SVN-Cherish Moment.ttf"; path = "../assets/fonts/SVN-Cherish Moment.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 				11F4508FE7514703BE149006 /* eina-04-regular.eot */,
 				D6D395752F6544EE8FFAD5FD /* eina-04-regular.woff */,
 				28F62B8243CE430FBF80AE68 /* eina-04-regular.woff2 */,
+				34C1DAF331CC46669408A6F2 /* SVN-Cherish Moment.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				785B557C06744EC9A3E945A8 /* eina-04-regular.eot in Resources */,
 				D09C99B2C24B47AC93FD3013 /* eina-04-regular.woff in Resources */,
 				25C8BE1F3EE54D4FB7A7E211 /* eina-04-regular.woff2 in Resources */,
+				C471862CED844E529ACD4D8A /* SVN-Cherish Moment.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
