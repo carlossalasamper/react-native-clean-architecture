@@ -2,11 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-<<<<<<<< HEAD:ios/TBDEdu.xcworkspace/contents.xcworkspacedata
       location = "group:TBDEdu.xcodeproj">
-========
-      location = "group:Mydio.xcodeproj">
->>>>>>>> b42aa6e (rename, change bundle id project):ios/Mydio.xcworkspace/contents.xcworkspacedata
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

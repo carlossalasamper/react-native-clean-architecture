@@ -5,11 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-<<<<<<<< HEAD:ios/TBDEdu/Info.plist
 	<string>TBD-Edu</string>
-========
-	<string>Mydio</string>
->>>>>>>> b42aa6e (rename, change bundle id project):ios/Mydio/Info.plist
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

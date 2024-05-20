@@ -15,15 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-<<<<<<<< HEAD:ios/TBDEdu.xcodeproj/xcshareddata/xcschemes/TBDEdu.xcscheme
                BuildableName = "TBDEdu.app"
                BlueprintName = "TBDEdu"
                ReferencedContainer = "container:TBDEdu.xcodeproj">
-========
-               BuildableName = "Mydio.app"
-               BlueprintName = "Mydio"
-               ReferencedContainer = "container:Mydio.xcodeproj">
->>>>>>>> b42aa6e (rename, change bundle id project):ios/Mydio.xcodeproj/xcshareddata/xcschemes/Mydio.xcscheme
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
