@@ -8,13 +8,15 @@ import LessonScreen from 'src/post/presentation/screens/LessonScreen';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function RootNavigator() {
-  const initialRouteName: keyof RootStackParamList = 'NotFound';
+  const initialRouteName: keyof RootStackParamList = 'Lesson';
 
   return (
     <Stack.Navigator
       initialRouteName={initialRouteName}
       screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Posts" component={LessonScreen} />
+      <Stack.Screen name="Posts" component={PostScreen} />
+
+      <Stack.Screen name="Lesson" component={LessonScreen} />
 
       <Stack.Screen name="Post" component={PostScreen} />
 
