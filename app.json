@@ -1,4 +1,14 @@
 {
-  "name": "TBD-Edu",
-  "displayName": "TBD-Edu"
+"name": "TBD-Edu",
+"displayName": "TBD-Edu",
+"expo": {
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/SVN_Cherish.otf"]
+        }
+      ]
+    ]
+  }
 }
