@@ -6,6 +6,7 @@ import TabNavigator from './tabNavigator/TabNavigator';
 import {hideBottomTab, showBottomTab} from './actions/RootNavigationActions';
 import PostScreen from 'src/post/presentation/screens/PostsScreen';
 import PostsScreen from 'src/post/presentation/screens/PostsScreen';
+import LessonScreen from 'src/lesson/presentation/screens/LessonScreen';
 
 const AuthStack = createStackNavigator();
 const HomeStack = createStackNavigator();
@@ -44,7 +45,7 @@ export const HomeStackScreens = (): React.ReactElement => {
       <HomeStack.Screen
         name={STACK_NAVIGATOR.HOME.LESSON}
         key={STACK_NAVIGATOR.HOME.LESSON}
-        component={PostsScreen}
+        component={LessonScreen}
         listeners={({navigation: navBottom}) => ({
           focus: () => {
             showBottomTab(navBottom);
