@@ -30,16 +30,6 @@ export const AuthStackScreens = (): React.ReactElement => {
           },
         })}
       />
-      {/* <AuthStack.Screen
-        name={STACK_NAVIGATOR.AUTH.LOGIN_SCREEN}
-        key={STACK_NAVIGATOR.AUTH.LOGIN_SCREEN}
-        component={Login}
-        listeners={({navigation: navBottom}) => ({
-          focus: () => {
-            hideBottomTab(navBottom);
-          },
-        })}
-      /> */}
     </AuthStack.Navigator>
   );
 };
@@ -52,8 +42,8 @@ export const HomeStackScreens = (): React.ReactElement => {
         headerShown: false,
       }}>
       <HomeStack.Screen
-        name={STACK_NAVIGATOR.AUTH.LOGIN_SCREEN}
-        key={STACK_NAVIGATOR.AUTH.LOGIN_SCREEN}
+        name={STACK_NAVIGATOR.HOME.LESSON}
+        key={STACK_NAVIGATOR.HOME.LESSON}
         component={PostsScreen}
         listeners={({navigation: navBottom}) => ({
           focus: () => {
@@ -61,16 +51,6 @@ export const HomeStackScreens = (): React.ReactElement => {
           },
         })}
       />
-      {/* <HomeStack.Screen
-        name={STACK_NAVIGATOR.AUTH.LOGIN_SCREEN}
-        key={STACK_NAVIGATOR.AUTH.LOGIN_SCREEN}
-        component={Login}
-        listeners={({navigation: navBottom}) => ({
-          focus: () => {
-            showBottomTab(navBottom);
-          },
-        })}
-      /> */}
     </HomeStack.Navigator>
   );
 };
