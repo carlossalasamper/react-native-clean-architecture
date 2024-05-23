@@ -11,6 +11,9 @@ export const STACK_NAVIGATOR = {
   AUTH: {
     LOGIN_SCREEN: 'LOGIN_SCREEN',
   },
+  HOME: {
+    LESSON: 'LESSON_SCREEN',
+  },
   /** EXPLORE */
   EXPLORE: {},
   /** LIBRARY */

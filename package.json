@@ -46,7 +46,8 @@
     "react-native-screens": "^3.31.1",
     "react-native-size-matters": "^0.4.2",
     "react-native-svg": "^15.3.0",
-    "react-native-web": "^0.18.7"
+    "react-native-web": "^0.18.7",
+    "react-native-alphadex-screentime": "link:./src/modules/react-native-alphadex-screentime"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

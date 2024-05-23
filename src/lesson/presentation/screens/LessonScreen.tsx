@@ -3,6 +3,7 @@ import React, {useRef} from 'react';
 import {useFonts} from 'expo-font';
 import CanvasWrite, {CanvasWriteRef} from '../components/CanvasWrite';
 import PrimaryButton from '../components/PrimaryButton';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const matchPointsA = [
   [8.456913341175436, 130.62562561035156],
@@ -34,9 +35,9 @@ const LessonScreen = () => {
   });
 
   const canvasWriteRef = useRef<CanvasWriteRef>(null);
-
+  const insets = useSafeAreaInsets();
   return (
-    <View style={[styles.screen]}>
+    <View style={[styles.screen, {paddingTop: insets.top}]}>
       <View style={[styles.ph24]}>
         <View style={[styles.rowBetween]}>
           <View>
