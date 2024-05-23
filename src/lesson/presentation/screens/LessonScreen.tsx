@@ -1,9 +1,9 @@
 import {View, Text, StyleSheet, Alert} from 'react-native';
 import React, {useRef} from 'react';
-import {useFonts} from 'expo-font';
 import CanvasWrite, {CanvasWriteRef} from '../components/CanvasWrite';
 import PrimaryButton from '../components/PrimaryButton';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {FontFamily} from 'src/core/presentation/hooks/useFonts';
 
 const matchPointsA = [
   [8.456913341175436, 130.62562561035156],
@@ -30,10 +30,6 @@ const matchPointsA = [
 ].map(v => ({x: v[0], y: v[1]}));
 
 const LessonScreen = () => {
-  const [_] = useFonts({
-    SVN_Cherish: require('assets/fonts/SVN_Cherish.otf'),
-  });
-
   const canvasWriteRef = useRef<CanvasWriteRef>(null);
   const insets = useSafeAreaInsets();
   return (
@@ -150,7 +146,7 @@ const styles = StyleSheet.create({
     marginTop: 32,
   },
   fonts_SVN_Cherish: {
-    fontFamily: 'SVN_Cherish',
+    fontFamily: FontFamily.SVNCherishMoment,
   },
   textTitle: {
     fontSize: 40,

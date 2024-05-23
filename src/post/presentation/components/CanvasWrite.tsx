@@ -48,7 +48,8 @@ export type CanvasWriteRef = {
 const CanvasWrite = forwardRef<CanvasWriteRef, Props>((props: Props, ref) => {
   const fontMgr = useFonts({
     SVN_Cherish: [
-      props.text?.font?.require ?? require('assets/fonts/SVN_Cherish.otf'),
+      props.text?.font?.require ??
+        require('assets/fonts/SVN-Cherish Moment.ttf'),
     ],
   });
   const font = fontMgr
