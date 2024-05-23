@@ -4,6 +4,7 @@ import CanvasWrite, {CanvasWriteRef} from '../components/CanvasWrite';
 import PrimaryButton from '../components/PrimaryButton';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {FontFamily} from 'src/core/presentation/hooks/useFonts';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const matchPointsA = [
   [8.456913341175436, 130.62562561035156],
