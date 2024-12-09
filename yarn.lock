@@ -1764,6 +1764,33 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@inversiland/common@1.4.0-beta.0":
+  version "1.4.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@inversiland/common/-/common-1.4.0-beta.0.tgz#b9bc64308c8ec796ef93a861fa0e956db585cd1d"
+  integrity sha512-YmqoB087zFdKvw+APLAvsRVtAlnyeWBwzzaMz4V84TzZa68J3bKIO5zgOfjizTJPrSMizy0lTBtJFYk7wEVFBw==
+
+"@inversiland/core@1.3.5-beta.1":
+  version "1.3.5-beta.1"
+  resolved "https://registry.yarnpkg.com/@inversiland/core/-/core-1.3.5-beta.1.tgz#b8d030636e9c55f9528af3be9c9f62c7390f54d6"
+  integrity sha512-uSDz2Q3nW14aEuUF+EKBg291SXNw4u7TQvklZql6RZhovjejJZyFYdaGnuxfqjicAxEX0gSC9Gill8BBAC3tTA==
+  dependencies:
+    "@inversiland/common" "1.4.0-beta.0"
+    "@inversiland/metadata" "0.2.5-beta.0"
+
+"@inversiland/inversify@6.1.5-beta.0":
+  version "6.1.5-beta.0"
+  resolved "https://registry.yarnpkg.com/@inversiland/inversify/-/inversify-6.1.5-beta.0.tgz#6c5cb5978f4361d7f3100629026db601327db3fa"
+  integrity sha512-a3m1eRpcxcrbdw03CrIOQ4utSY72Pn759pvUMhKo0LiWErCU9L/VNN1v+L5me5mfmvclDI0J3B4ePSCGYFlgbg==
+  dependencies:
+    "@inversiland/common" "1.4.0-beta.0"
+    "@inversiland/core" "1.3.5-beta.1"
+    "@inversiland/metadata" "0.2.5-beta.0"
+
+"@inversiland/metadata@0.2.5-beta.0":
+  version "0.2.5-beta.0"
+  resolved "https://registry.yarnpkg.com/@inversiland/metadata/-/metadata-0.2.5-beta.0.tgz#13f9567d4769d85b399d1d5f2ea348b4696ba47a"
+  integrity sha512-NEKRv8E+uRz8dTxb4tUncoPSr6PfZA1HPAVlG86JohqGhTFqTSbs+iY6rq/9q8cx+KQ1ggZ7e0WAyVDGoOcZcA==
+
 "@jest/create-cache-key-function@^27.0.1":
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/@jest/create-cache-key-function/-/create-cache-key-function-27.5.1.tgz#7448fae15602ea95c828f5eceed35c202a820b31"
@@ -6551,18 +6578,15 @@ invariant@^2.2.4:
   dependencies:
     loose-envify "^1.0.0"
 
-inversify-sugar@^0.5.9:
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/inversify-sugar/-/inversify-sugar-0.5.9.tgz#446dd2c8bd30cfdff8397f26a9efead50bb0a219"
-  integrity sha512-sdaEUq4YBWRM1/XrEd8I1wIBAlQzDpP7BXAwfHYwzGWBbBnZhRO7SEzHq2+s7AW9lvPR2VezlmtO0uGJLvRjCQ==
+inversiland@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/inversiland/-/inversiland-0.6.0.tgz#8831205f0c13b7f913e86b93958875f6ff2ecc2d"
+  integrity sha512-rlb27IcA9+oPAQD/lgrrsa+x2K0UQAAySedIqOxhdBhPrvPZyexYlp6j2QR5sLNzKRNhsDy2TLBMpGMN0pCqfA==
   dependencies:
-    inversify "^6.0.1"
-    reflect-metadata "^0.1.13"
-
-inversify@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/inversify/-/inversify-6.0.1.tgz#b20d35425d5d8c5cd156120237aad0008d969f02"
-  integrity sha512-B3ex30927698TJENHR++8FfEaJGqoWOgI6ZY5Ht/nLUsFCwHn6akbwtnUAPCgUepAnTpe2qHxhDNjoKLyz6rgQ==
+    "@inversiland/common" "1.4.0-beta.0"
+    "@inversiland/inversify" "6.1.5-beta.0"
+    "@inversiland/metadata" "0.2.5-beta.0"
+    reflect-metadata "^0.2.2"
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -9851,10 +9875,10 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
-reflect-metadata@^0.1.13:
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
-  integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
+reflect-metadata@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.2.2.tgz#400c845b6cba87a21f2c65c4aeb158f4fa4d9c5b"
+  integrity sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==
 
 regenerate-unicode-properties@^10.1.0:
   version "10.1.0"

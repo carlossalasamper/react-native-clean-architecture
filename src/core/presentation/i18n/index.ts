@@ -1,7 +1,7 @@
 import * as Localization from "expo-localization";
 import { I18n as I18nJs, Scope, TranslateOptions } from "i18n-js";
 import locales from "./locales";
-import { injectable } from "inversify-sugar";
+import { injectable } from "inversiland";
 
 @injectable()
 class I18n {

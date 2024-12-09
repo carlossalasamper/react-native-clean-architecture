@@ -1,4 +1,4 @@
-import { getModuleContainer, module } from "inversify-sugar";
+import { getModuleContainer, module } from "inversiland";
 import I18n from "./presentation/i18n";
 import HttpClient from "./infrastructure/implementations/HttpClient";
 import { IHttpClientToken } from "./domain/specifications/IHttpClient";

@@ -1,6 +1,6 @@
 import GetPostsPayload from "src/post/application/types/GetPostsPayload";
 import axios from "axios";
-import { injectable, provided } from "inversify-sugar";
+import { injectable, inject } from "inversiland";
 import { IPostRepository } from "../../domain/specifications/IPostRepository";
 import GetPostsResponse from "src/post/application/types/GetPostsResponse";
 import PostDto from "../models/PostDto";
@@ -14,7 +14,7 @@ class PostRepository implements IPostRepository {
   private readonly baseUrl = "/posts";
 
   constructor(
-    @provided(IHttpClientToken) private readonly httpClient: IHttpClient
+    @inject(IHttpClientToken) private readonly httpClient: IHttpClient
   ) {}
 
   public async find(id: number) {

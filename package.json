@@ -24,7 +24,7 @@
     "expo-splash-screen": "~0.16.2",
     "expo-status-bar": "~1.4.0",
     "i18n-js": "^4.1.1",
-    "inversify-sugar": "^0.5.9",
+    "inversiland": "^0.6.0",
     "mobx": "^6.12.0",
     "mobx-react": "^9.1.0",
     "react": "18.0.0",

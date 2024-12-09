@@ -1,4 +1,4 @@
-import { injectable, provided } from "inversify-sugar";
+import { injectable, inject } from "inversiland";
 import { makeAutoObservable } from "mobx";
 import GetPostsStoreState from "../../types/GetPostsStoreState";
 import GetPostsPayload from "src/post/application/types/GetPostsPayload";
@@ -16,7 +16,7 @@ export class GetPostsStore implements GetPostsStoreState {
   };
 
   constructor(
-    @provided(GetPostsUseCase)
+    @inject(GetPostsUseCase)
     private readonly getPostsUseCase: GetPostsUseCase
   ) {
     makeAutoObservable(this);

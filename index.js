@@ -1,12 +1,12 @@
 import "expo-dev-client";
 import { registerRootComponent } from "expo";
-import { InversifySugar } from "inversify-sugar";
+import { Inversiland } from "inversiland";
 import AppModule from "./src/AppModule";
 import App from "./src/core/presentation/App";
 
 (() => {
-  InversifySugar.options.defaultScope = "Singleton";
-  InversifySugar.run(AppModule);
+  Inversiland.options.defaultScope = "Singleton";
+  Inversiland.run(AppModule);
 
   registerRootComponent(App);
 })();

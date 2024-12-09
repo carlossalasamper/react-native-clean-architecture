@@ -12,7 +12,7 @@
 - 🖌️ Code format: [ESLint](https://eslint.org/)
 - 🖌️ Commit format: [CommitLint](https://commitlint.js.org)
 - 🐩 Git hooks: [Husky](https://www.npmjs.com/package/husky)
-- 💉 Dependency injection: [InversifySugar](https://github.com/carlossalasamper/inversify-sugar)
+- 💉 Dependency injection: [Inversiland](https://github.com/inversiland/inversiland)
 - 🌍 I18n: [expo-localization](https://docs.expo.dev/versions/latest/sdk/localization/) + [i18n-js](https://www.npmjs.com/package/i18n-js)
 - 🚢 Navigation: [@react-navigation/native](https://reactnavigation.org/docs/getting-started)
 - 🧰 State Manager: [Mobx](https://mobx.js.org/)

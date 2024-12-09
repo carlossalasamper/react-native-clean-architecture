@@ -1,4 +1,4 @@
-import { getModuleContainer, module } from "inversify-sugar";
+import { getModuleContainer, module } from "inversiland";
 import { GetPostsStore } from "./presentation/stores/GetPostsStore/GetPostsStore";
 import { FindPostStore } from "./presentation/stores/FindPostStore/FindPostStore";
 import { IPostRepositoryToken } from "./domain/specifications/IPostRepository";
