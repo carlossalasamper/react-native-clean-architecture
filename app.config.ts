@@ -6,7 +6,6 @@ const appConfig: ExpoConfig = {
   slug: "react-native-clean-architecture",
   scheme: "rnca",
   version: packageJson.version,
-  entryPoint: "./index.js",
   orientation: "portrait",
   icon: "./assets/images/icon.png",
   userInterfaceStyle: "light",
@@ -32,9 +31,19 @@ const appConfig: ExpoConfig = {
   web: {
     favicon: "./assets/images/favicon.png",
   },
-  extra: {
-    EXPO_BASE_API_URL: "https://jsonplaceholder.typicode.com",
-  },
+  plugins: [
+    [
+      "expo-build-properties",
+      {
+        ios: {
+          deploymentTarget: "15.1",
+          useFrameworks: "static",
+        },
+      },
+    ],
+    "expo-localization",
+    "expo-tracking-transparency",
+  ],
 };
 
 export default appConfig;

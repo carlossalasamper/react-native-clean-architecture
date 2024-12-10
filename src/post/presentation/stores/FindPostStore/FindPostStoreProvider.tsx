@@ -6,7 +6,7 @@ import { postModuleContainer } from "src/post/PostModule";
 export const FindPostStoreProvider = ({ children }: PropsWithChildren) => {
   return (
     <FindPostStoreContext.Provider
-      value={postModuleContainer.getProvided(FindPostStore)}
+      value={postModuleContainer.get(FindPostStore)}
     >
       {children}
     </FindPostStoreContext.Provider>

@@ -2,8 +2,7 @@ import { getModuleContainer, module } from "inversiland";
 import I18n from "./presentation/i18n";
 import HttpClient from "./infrastructure/implementations/HttpClient";
 import { IHttpClientToken } from "./domain/specifications/IHttpClient";
-import { EnvToken } from "./domain/entities/Env";
-import env from "./infrastructure/env";
+import Env, { EnvToken } from "./domain/entities/Env";
 
 @module({
   providers: [
@@ -11,7 +10,9 @@ import env from "./infrastructure/env";
     {
       isGlobal: true,
       provide: EnvToken,
-      useValue: env,
+      useValue: {
+        apiUrl: process.env.EXPO_PUBLIC_API_URL,
+      } as Env,
     },
     {
       isGlobal: true,

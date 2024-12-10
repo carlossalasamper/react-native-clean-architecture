@@ -1,5 +1,4 @@
 import GetPostsPayload from "src/post/application/types/GetPostsPayload";
-import axios from "axios";
 import { injectable, inject } from "inversiland";
 import { IPostRepository } from "../../domain/specifications/IPostRepository";
 import GetPostsResponse from "src/post/application/types/GetPostsResponse";
@@ -25,7 +24,7 @@ class PostRepository implements IPostRepository {
   }
 
   public async get({}: GetPostsPayload): Promise<GetPostsResponse> {
-    const posts = (await axios.get<unknown[]>(this.baseUrl)).data;
+    const posts = await this.httpClient.get<unknown[]>(this.baseUrl);
     const response: GetPostsResponse = {
       results: posts.map((post) => plainToInstance(PostDto, post).toDomain()),
       count: posts.length,

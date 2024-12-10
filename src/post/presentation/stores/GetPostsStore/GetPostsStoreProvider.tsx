@@ -6,7 +6,7 @@ import { postModuleContainer } from "src/post/PostModule";
 export const GetPostsStoreProvider = ({ children }: PropsWithChildren) => {
   return (
     <GetPostsStoreContext.Provider
-      value={postModuleContainer.getProvided(GetPostsStore)}
+      value={postModuleContainer.get(GetPostsStore)}
     >
       {children}
     </GetPostsStoreContext.Provider>

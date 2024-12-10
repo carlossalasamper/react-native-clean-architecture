@@ -7,6 +7,7 @@
 
 ## Features
 
+- 🚀 [Expo 52](https://expo.dev/)
 - 📁 Clean architecture. Layered file structure
 - 🛡️ TypeScript bulletproof typing
 - 🖌️ Code format: [ESLint](https://eslint.org/)
@@ -62,6 +63,22 @@ This layer contains the React Native source code: views and controllers (Redux T
 
 <hr>
 
+## Environment
+
+Expo CLI loads .env files according to the [standard .env file resolution](https://github.com/bkeepers/dotenv/blob/c6e583a/README.md#what-other-env-files-can-i-use) and then replaces all references in your code to `process.env.EXPO_PUBLIC_[VARNAME]` with the corresponding value set in the .env files. Code inside node_modules is not affected for security purposes.
+
+### Development Environment
+
+Create a `.env` file in the root of your project for development purposes:
+
+```
+EXPO_PUBLIC_API_URL=https://jsonplaceholder.typicode.com
+```
+
+### Production Environment
+
+Configure the `.env.production` file with the environment variables you want to use in production.
+
 ## Run
 
 Dev
@@ -100,7 +117,7 @@ expo eject
 
 ## Support the project
 
-<p align="center">☕️ Buy me a coffee so the open source party never ends.</p>
+<p align="center">☕️ Buy me a coffee so the open source party will never end.</p>
 
 <p align="center"><a href="https://www.buymeacoffee.com/carlossala95" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></p>
 

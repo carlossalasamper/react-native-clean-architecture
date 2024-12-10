@@ -76,3 +76,6 @@ dist/
 # @end expo-cli
 
 .npmrc
+
+# env
+.env

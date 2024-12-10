@@ -11,7 +11,7 @@ class HttpClient implements IHttpClient {
     this.axios = axios;
 
     axios.interceptors.request.use((requestConfig) => {
-      requestConfig.baseURL = this.env.EXPO_BASE_API_URL;
+      requestConfig.baseURL = env.apiUrl;
 
       // TODO: add authentication
 

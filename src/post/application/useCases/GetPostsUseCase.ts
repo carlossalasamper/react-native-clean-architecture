@@ -16,7 +16,7 @@ export default class GetPostsUseCase
     private readonly postRepository: IPostRepository
   ) {}
 
-  public execute(data: GetPostsPayload) {
-    return this.postRepository.get(data);
+  public execute(payload: GetPostsPayload) {
+    return this.postRepository.get(payload);
   }
 }
